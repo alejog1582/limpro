@@ -49,7 +49,7 @@
             "@php artisan package:discover"
         ],
         "compile": [
-            "php arstisan migrate --force"
+            "php artisan migrate --force"
         ]
     },
     "config": {
