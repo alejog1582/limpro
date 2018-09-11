@@ -15,19 +15,21 @@ class CreateFuncionariosTable extends Migration {
 			$table->increments('id');
 			$table->timestamps();
 
-			$table->integer('numero_cedula');
+			$table->string('tipo_cedula');
+			$table->string('numero_cedula');
 			$table->string('url_foto');
 			$table->string('nombre_funcionario');
 			$table->string('sexo');
 			$table->string('tipo_sangre');
-			$table->date('fecha_vinculacion');
-			$table->date('fecha_desvinculacion')->nullable();
+			$table->string('fecha_vinculacion');
+			$table->string('fecha_desvinculacion')->nullable();
 			$table->string('tipo_contrato');
+			$table->string('talla_uniforme');
 			$table->string('tipo_cuenta')->nullable();
 			$table->string('banco')->nullable();
-			$table->integer('numero_cuenta')->nullable();
+			$table->string('numero_cuenta')->nullable();
 			$table->string('oficio');
-			$table->date('fecha_nacimiento');
+			$table->string('fecha_nacimiento');
 			$table->string('direccion_residencia');
 			$table->string('email');
 			$table->string('celular_contacto');

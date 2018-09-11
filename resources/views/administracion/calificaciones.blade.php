@@ -4,7 +4,7 @@
 
 <div class="row text-center">
 	<div class="col-12">
-		<h2>soy Calificaciones</h2>
+		<h2 class="titulo">soy Calificaciones</h2>
 		<br>
 		<br>
 		<a class="btn btn-primary" href="/administracion">Volver</a>

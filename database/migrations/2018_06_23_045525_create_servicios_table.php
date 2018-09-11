@@ -15,7 +15,7 @@ class CreateServiciosTable extends Migration {
 			$table->increments('id');
 			$table->timestamps();
 
-			$table->date('fecha_servicio');
+			$table->string('fecha_servicio');
 			$table->string('plan');
 			$table->integer('valor_plan');
 			$table->string('hora_inicio');
@@ -25,14 +25,16 @@ class CreateServiciosTable extends Migration {
 			$table->string('email');
 			$table->string('celular_contacto');
 			$table->string('fijo_contacto')->nullable();
-			$table->integer('id_funcionario_1')->nullable();
-			$table->integer('id_funcionario_2')->nullable();
-			$table->integer('id_funcionario_3')->nullable();
-			$table->integer('id_funcionario_4')->nullable();
-			$table->integer('id_funcionario_selec')->nullable();
+			$table->integer('id_funcionario_1')->nullable()->unsigned();
+			$table->integer('id_funcionario_2')->nullable()->unsigned();
+			$table->integer('id_funcionario_3')->nullable()->unsigned();
+			$table->integer('id_funcionario_4')->nullable()->unsigned();
+			$table->integer('id_funcionario_selec')->nullable()->unsigned();
 			$table->string('metodo_pago')->nullable();
 			$table->string('estado');
-			$table->integer('id_calificacion')->nullable();
+			$table->integer('id_calificacion')->nullable()->unsigned();
+			$table->string('canje');
+
 		});
 	}
 

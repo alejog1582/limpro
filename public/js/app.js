@@ -1,3 +1,7 @@
+function mostrar(){
+document.getElementById('carta').style.display = 'block';}
+
+
 //Carousel
 $('.carousel.carousel-slider').carousel({
             fullWidth: true,
@@ -14,6 +18,7 @@ $(document).ready(function(){
     $('.datepicker').datepicker({
     	format: 'dd-mm-yyyy',
         firstDay: 1,
+        yearRange: 100,
         i18n: ({
     		cancel: "cancelar",
     		months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -32,4 +37,17 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('select').formSelect();
+  });
+
+$(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+$(".dropdown-trigger").dropdown();
+
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+$(document).ready(function(){
+    $('.sidenav').sidenav();
   });

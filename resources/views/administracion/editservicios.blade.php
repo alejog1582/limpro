@@ -2,13 +2,17 @@
 
 @section('content')
 
-<div class="row text-center">
-	<div class="col-12">
-		<h2>soy editar servicios</h2>
-		<br>
-		<br>
-		<a class="btn btn-primary" href="/administracion/servicios">Volver</a>
-	</div>
+<div class="row center blue-color sin-espacio">
+   	<div class="col s4 offset-s4">
+   		<br>
+     	<div class="card-panel blue-color-light">
+        	<span class="white-text">El Servicio se a editado correctamente</b>.
+        	</span>
+        	<br><br>
+        	<a href="/administracion" class="btn green-color">Aceptar</a>
+      	</div>
+      	<br>
+    </div>
 </div>
 
 @endsection
