@@ -26,9 +26,9 @@
         <div class="row blue-color sin-espacio hide-on-small-only">
             <div class="col s12 right-align">
                 <a href=""><i class="fab fa-whatsapp icono-cabecera"></i></a>
-                <span class="white-text">+ 57 321 3857042</span>
+                <span class="white-text"><a href="tel:+573504591097" class="white-text">+ 57 350 4591097</a></span>
                 <a href=""><i class="far fa-envelope icono-cabecera"></i></a>
-                <span class="white-text">servicios@limpro.com.co</span>
+                <span class="white-text"><a href="mailto:servicios@limpro.com.co" class="white-text">servicios@limpro.com.co</a></span>
                 <hr>
             </div>
         </div>
@@ -242,7 +242,7 @@
                     <div class="row">
                         <div class="col s12">
                             <h5 class="titulo">Contacto</h5>
-                            <p>- Bogotá, D.C. - Colombia<br>- Ventas: (+57) 3102425254<br>- Carrera 7 No. 156 - 10 Torre Krystal Oficina 1707<br>- servicios@limpr.com.co</p>
+                            <p>- Bogotá, D.C. - Colombia<br><a href="tel:+573504591097" class="white-text">- Ventas: (+57) 350 4591097<br></a>- Carrera 7 No. 156 - 10 Torre Krystal Oficina 1707<br><a href="mailto:servicios@limpro.com.co" class="white-text">- servicios@limpr.com.co</a></p>
                         </div>
                     </div>
                     <div class="row">
