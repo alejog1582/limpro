@@ -16,7 +16,152 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/estilos_propios.css') }}">
+    <style type="text/css">
+        body{
+            font-size: 26px;
+            font-family: 'Raleway', sans-serif;
+        }
+        nav ul a{
+            font-size: 1em !important;
+        }
+        nav ul a:hover{
+          color: #7AB518;
+        }
+        input{
+          border-bottom: 2px #7AB518 solid !important;
+        }
+        .select-wrapper input.select-dropdown{
+          color: white !important;
+          font-size: 1.25rem !important;
+        }
+        #logo_500{
+          width: 100px;
+        }
+
+        #slider1{
+          background-image: url("../images/slider-1-C.jpg");
+          background-repeat: round;
+          height: 100%;
+
+        }
+        .ec-stars-wrapper {
+          /* Espacio entre los inline-block (los hijos, los `a`)
+             http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+          font-size: 0;
+          /* Podríamos quitarlo,
+            pero de esta manera (siempre que no le demos padding),
+            sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+            también se esté haciendo hover a alguna estrella */
+          display: inline-block;
+        }
+        .ec-stars-wrapper a {
+          text-decoration: none;
+          display: inline-block;
+          /* Volver a dar tamaño al texto */
+          font-size: 32px;
+          font-size: 2rem;
+
+          color: #888;
+        }
+
+        .ec-stars-wrapper:hover a {
+          color: #7AB518;
+        }
+        /*
+         * El selector de hijo, es necesario para aumentar la especifidad
+         */
+        .ec-stars-wrapper > a:hover ~ a {
+          color: #888;
+        }
+
+        .tabs .indicator{
+          background-color:  white !important;
+          height: 4px !important;
+        }
+        .blue-color{
+          background-color: #465057 !important;
+        }
+        .blue-texto{
+          color: #465057 !important;
+        }
+        .blue-texto-oscuro{
+          color: #252E30 !important;
+        }
+        .green-color{
+          background-color: #7AB518 !important;
+        }
+        .green-texto{
+          color: #7AB518 !important;
+        }
+        .icono-cabecera{
+          margin-top: 0.5em;
+          margin-left: 0.5em;
+          color: #7AB518;
+        }
+        .sin-espacio{
+          margin-bottom: 0px !important;
+        }
+        .sin-espacio-top{
+          margin-top: 0px !important;
+        }
+        .sombra{
+          background-color: #47515878;
+        }
+        .blue-color-light{
+          background-color: #59646B !important;
+        }
+        .blue-color-black{
+          background-color: #313A41 !important;
+        }
+        .blue-color-oscuro{
+          background-color: #252E30 !important;
+        }
+        .planes:hover{
+          background-color: #7AB518 !important;
+        }
+        .titulo{
+          font-family: 'Abril Fatface', cursive;
+          text-transform: uppercase;
+        }
+        .select-wrapper .caret{
+          fill: white !important;
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+          color: #7AB518 !important;
+        }
+        .select-month .select-dropdown.dropdown-trigger{
+          color: black !important;
+        }
+        .select-year .select-dropdown.dropdown-trigger{
+          color: black !important;
+        }
+        .datepicker-date-display{
+          background-color:  #7AB518 !important;
+        }
+        .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done{
+          color: #7AB518 !important;
+        }
+        .datepicker-table td.is-selected{
+            background-color: #7AB518 !important;
+        }
+        .input-field>label{
+          font-size: 1.25rem !important;
+        }
+        [type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
+          font-size: 1.25rem !important;
+        }
+        [type="checkbox"]+span:not(.lever){
+          font-size: 1.25rem !important;
+        }
+        [type="checkbox"].filled-in:checked+span:not(.lever):after{
+          border: 2px solid #7AB518 !important;
+          background-color: #7AB518 !important;
+        }
+        [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after{
+          background-color: white !important;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="{{ asset('css/estilos_propios.css') }}">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 </head>
@@ -261,6 +406,51 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="{{ asset('js/js_propios.js') }}"></script>
+    <!--<script src="{{ asset('js/js_propios.js') }}"></script>-->
+    <script type="text/javascript">
+        $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+            setInterval(function(){
+                //$('.carousel.carousel-slider').carousel('next');
+            },5000)
+    $(document).ready(function(){
+        $('.datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            firstDay: 1,
+            yearRange: 100,
+            i18n: ({
+                cancel: "cancelar",
+                months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                monthsShort: [ 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                weekdays: [ 'Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],
+                weekdaysShort: [ 'Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+                    weekdaysAbbrev:  ['D','L','M','M','J','V','S']
+
+            })
+        });
+    });
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
+
+    $(document).ready(function(){
+        $('.tabs').tabs();
+      });
+
+    $(".dropdown-trigger").dropdown();
+
+    $(document).ready(function(){
+        $('.modal').modal();
+      });
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
 </body>
 </html>
