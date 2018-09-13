@@ -30,15 +30,19 @@ class HomeController extends Controller {
 		$historial = false;
 		foreach ($servicios as $servicio) {
 			if ($servicio->email == $user->email) {
-				if ($servicio->id_calificacion == null) {
-					$activos = true;
+				if ($servicio->estado != 'cancelado') {
+					if ($servicio->id_calificacion == null) {
+						$activos = true;
+					}
 				}
 			}
 		}
 		foreach ($servicios as $servicio) {
 			if ($servicio->email == $user->email) {
-				if ($servicio->id_calificacion != null) {
-					$historial = true;
+				if ($servicio->estado != 'cancelado') {
+					if ($servicio->id_calificacion != null) {
+						$historial = true;
+					}
 				}
 			}
 		}

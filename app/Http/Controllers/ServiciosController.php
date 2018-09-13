@@ -75,7 +75,7 @@ class ServiciosController extends Controller {
 		]);
 	}
 	public function canjeNewServicio(NewServicioPagoRequest $request) {
-		$servicios = Servicio::all();
+		$servicioss = Servicio::all();
 		if ($request->plan == '4') {
 			$valor_plan = 50000;
 		}if ($request->plan == '8') {
@@ -101,13 +101,13 @@ class ServiciosController extends Controller {
 			'estado' => 'solicitado',
 			'canje' => 'si',
 		]);
-		foreach ($servicios as $servicio) {
-			if ($servicio->email == $request->email) {
-				if ($servicio->plan == $request->plan) {
-					if ($servicio->id_calificacion != null) {
-						if ($servicio->canje == 'no') {
-							$servicio->canje = 'si';
-							$servicio->save();
+		foreach ($servicioss as $servicios) {
+			if ($servicios->email == $request->email) {
+				if ($servicios->plan == $request->plan) {
+					if ($servicios->id_calificacion != null) {
+						if ($servicios->canje == 'no') {
+							$servicios->canje = 'si';
+							$servicios->save();
 						}
 					}
 				}

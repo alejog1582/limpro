@@ -11,7 +11,7 @@
 		</div>
 		<div class="row sin-espacio">
 			<div class="col s12 m4">
-				<p>Calificacion Global: {{ $calificacion }}</p>
+				<p>Calificacion Global: {{ round ($calificacion, 2) }}</p>
 			</div>
 			<div class="col s12 m4">
 				<p>Numero de Servicios: {{ $servicios_realizados }}</p>
