@@ -419,6 +419,9 @@
         $('.datepicker').datepicker({
             format: 'dd-mm-yyyy',
             firstDay: 1,
+            disableDayFn: function(date) {
+                return date.getDay() === 0 || date.toISOString().split('T')[0] === '2018-10-15' || date.toISOString().split('T')[0] === '2018-11-05' || date.toISOString().split('T')[0] === '2018-11-12' || date.toISOString().split('T')[0] === '2018-12-08' || date.toISOString().split('T')[0] === '2018-12-25';
+            },
             yearRange: 100,
             i18n: ({
                 cancel: "cancelar",
