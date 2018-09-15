@@ -54,6 +54,10 @@ Route::get('/aspirante', 'PagesController@Aspirante');
 Route::post('/aspirante/save', 'PagesController@SaveAspirante');
 //FIn Aspirantes
 
+//Sobre Nosotros
+Route::get('/sobrenosotros', 'PagesController@SobreNosotros');
+//FIn SObre Nosotros
+
 Route::group(['middleware' => 'admin'], function () {
 //Administracion
 

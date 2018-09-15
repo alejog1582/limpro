@@ -277,6 +277,8 @@ class PagesController extends Controller {
 			'estado' => 'enviado',
 		]);
 		return view('aspirantes.confirmacionaspirante');
-		return view('aspirantes.aspirante');
+	}
+	public function SobreNosotros() {
+		return view('sobrenosotros');
 	}
 }
