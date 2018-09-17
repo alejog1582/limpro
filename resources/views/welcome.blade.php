@@ -95,7 +95,7 @@
             <div class="col s12 m6">
                     <h3 class="titulo">Disponibilidad 7/24</h3>
                     <br>
-                    <p>Contamos con disponibilidad de nuestros expertos por días y horas para limpieza de casas, oficinas y locales comerciales.</p>
+                    <p>Ofrecemos lo mejor en servicios generales de aseo y contamos con la disponibilidad de nuestros colaboradores de acuerdo a tu necesidad ya sea por días o por horas.</p>
             </div>
             <div class="col s12 m6">
                 <img width="60%" src="{{ asset('images/24horas.jpg') }}">
@@ -109,14 +109,14 @@
             <div class="col s12 m6">
                     <h3 class="titulo">Comodidad</h3>
                     <br>
-                    <p>Puedes realizar la reservacion de tu servicio de limpieza desde la comodidad de tu casa. Por medio de nuestra pagina web, via whatsapp o via email.</p>
+                    <p>Puedes realizar la reserva y el pago de tus servicios de forma cómoda, desde cualquier lugar y con cualquiera de nuestros medios dispuestos para ti.</p>
             </div>
         </div>
         <div class="row">
             <hr>
             <div class="col s12 m6">
                     <h3 class="titulo">Seleccion de Personal</h3>
-                    <p>Tu escoges la persona que realizara tu servicio. Una vez el servicio sea solicitado y pagado, podras acceder a tu cuenta y encontraras las hojas de vida de nuestros colaboradores que se encuentran disponibles para la fecha de tu servicio. <br>  <br>En esta hoja de vida tendras plena identificacion de nuestro colaborador y encontraras su calificacion. <br>    <br>    </p>
+                    <p>Una vez el servicio sea solicitado y pagado, podrás conocer información de nuestros colaboradores disponibles para tu servicio y así escoger el colaborador de tu preferencia.</p>
             </div>
             <div class="col s12 m6">
                 <img width="60%" src="{{ asset('images/seleccion.jpg') }}">
@@ -130,7 +130,7 @@
             <div class="col s12 m6">
                     <h3 class="titulo">Personal Capacitado</h3>
                     <br>
-                    <p>Nuestro recurso Humano esta capacitado para el desempeño de las funciones en labores de aseo. Y con base a las calificaciones de nuestros clientes hayamos oportunidades de mejoras las cuales son evaluadas y solucionadas para brindar el mejor serivicio.</p>
+                    <p>Contamos con recurso humano capacitado constantemente para el desempeño de las funciones de servicios generales.</p>
             </div>
         </div>
         <div class="row">
@@ -138,7 +138,7 @@
             <div class="col s12 m6">
                     <h3 class="titulo">Poliza de Seguro</h3>
                     <br>
-                    <p>Contamos con póliza de aseguramiento de nuestros servicios. Dicho seguro cubre cualquier daño y/o perdida que haya sido causado por nuestra funcionaria en el desarrollo de su labor. Esta poliza esta contratada con seguros del estado.</p>
+                    <p>Contamos con una póliza de aseguramiento de nuestros servicios. El cual cubre cualquier daño y/o perdida que se halla evidenciado que fue causado por nuestra funcionaria en el desarrollo de su labor.</p>
             </div>
             <div class="col s12 m6">
                 <img width="60%" src="{{ asset('images/seguro.jpg') }}">
@@ -147,20 +147,9 @@
         <div class="row">
             <hr>
             <div class="col s12 m6">
-                <img width="60%" src="{{ asset('images/contratacion.jpg') }}">
-            </div>
-            <div class="col s12 m6">
-                    <h3 class="titulo">Contratacion Legal</h3>
-                    <br>
-                    <p>La contratacion de nuestros funcionarios esta dentro del marco legal vigente. Realizamos el pago de seguridad social y de todos los parafiscales y beneficios que estable la ley.</p>
-            </div>
-        </div>
-        <div class="row">
-            <hr>
-            <div class="col s12 m6">
                     <h3 class="titulo">Sistema de Calificacion</h3>
                     <br>
-                    <p>Con el fin de mejorar nuestro servicio constantmente, tenemos a disposicion de nuestros clientes la opcion de poder calificar el servicio prestado. Estas calificaciones podran ser visualizadas por otros usuairos a la hora de la seleccion de funcionarios.</p>
+                    <p>Tu opinión y comentarios son vitales para nosotros, por eso con el ánimo de brindar una experiencia inolvidable a nuestros clientes, podrás calificar el servicio prestado y visualizar las calificaciones de otros usuarios.</p>
             </div>
             <div class="col s12 m6">
                 <img width="60%" src="{{ asset('images/calificacion.jpg') }}">
@@ -259,7 +248,7 @@
                         <div class="collapsible-header blue-color-oscuro"><i class="fas fa-bed"></i>Habitaciones</div>
                         <div class="collapsible-body blue-color-light">
                             <span>
-                                Aseo general de habitación (Barrer, trapear y enserar)
+                                Aseo general de habitación (Barrer, trapear y encerar)
                                 <hr>
                                 Tendido de cama
                                 <hr>
@@ -301,7 +290,7 @@
                         <div class="collapsible-header blue-color-oscuro"><i class="fas fa-couch"></i>Areas Comunes</div>
                         <div class="collapsible-body blue-color-light">
                             <span>
-                                Limpieza de pisos. (Barrer, trapear y enserar).
+                                Limpieza de pisos. (Barrer, trapear y encerar).
                                 <hr>
                                 Limpieza de paredes, barandas, muros y divisiones modulares).
                                 <hr>
@@ -319,7 +308,7 @@
                         <div class="collapsible-header blue-color-oscuro"><i class="fas fa-building"></i>Oficinas</div>
                         <div class="collapsible-body blue-color-light">
                             <span>
-                                Zonas comunes (Barrer, trapear y enserar).
+                                Zonas comunes (Barrer, trapear y encerar).
                                 <hr>
                                 Limpieza de Escaleras y muebles en general.
                                 <hr>
@@ -345,7 +334,7 @@
         <div class="container">
             <div class="col s12">
                 <h2 class="titulo">Selecciona el Personal</h2>
-                <p>Queremos ser mas que una buena experiencia para nuestros clientes; Una vez solicitado y pagado el servicio, podra escoger entre distintas opciones la funcionaria que le genere mas confianza despues de visualizar las calificaciones y comenteraios de los servicios que a prestado a otros usuarios. Esta opcion la podra realizar al registrarse como usuario o por medio del link que recibira via email una vez recibamos el pago del servicio.</p>
+                <p>Una vez el servicio sea solicitado y pagado, podrás conocer información de nuestros colaboradores disponibles para tu servicio y así escoger el colaborador de tu preferencia al visualizar las calificaciones y comentarios de los servicios que a prestado a otros usuarios. Recuerda que esta opción la podrás realizar al registrarse como usuario o por medio del link que recibirá vía email una vez recibamos el pago del servicio.</p>
             </div>
         </div>
     </div>
@@ -376,7 +365,7 @@
                 <h3 class="titulo">Que puedo hacer al crear mi cuenta</h3>
             </div>
             <div class="col s12">
-                <p> Al crear tu cuenta podras visaulizar los servicios que se encuentran en proceso de realizacion y el historial de los servicios que hemos realizado. Podras seleccionar la funcionaria que prestara tu servicio de una terna de cuatro opciones donde podras visualizar la infomracion de nuestro colaborador y la calificacion que a obtenido en cada uno de los servicios que a prestado. Asi mismo podras realizar la calificaciones de cada servicio y podras canjear servicios una vez se completen 10 servicios.</p>
+                <p>Contaras con varios beneficios al crear tu cuenta, como conocer el Equipo Humano disponible para el servicio de acuerdo con tus necesidades, visualizar las calificaciones de otros usuarios y proceder a calificar el tuyo. Igualmente, con esta cuenta, te permitirá llevar el control de tus servicios y realizar el canje una vez se cumpla la política establecida.</p>
                 <a class="btn green-color" type="submit" name="action">Crear Cuenta<i class="material-icons right">send</i></a>
                 <br><br>
             </div>

@@ -81,11 +81,15 @@
         </div>
       <div class="input-field col s3">
           <select name="sangre" class="@if ($errors->has('sangre')) is-invalid    @endif">
-		     	<option disabled selected>Seleccione Tipo de Sangre</option>
-		    	<option value="a+">A+</option>
-		        <option value="o+">O+</option>
+		     	  <option disabled selected>Seleccione Tipo de Sangre</option>
+		    	  <option value="a+">A+</option>
 		        <option value="a-">A-</option>
+            <option value="o+">O+</option>
 		        <option value="o-">O-</option>
+            <option value="b+">B+</option>
+            <option value="b-">B-</option>
+            <option value="ab+">AB+</option>
+            <option value="ab-">AB-</option>
 		    </select>
         	@if ($errors->has('sangre'))
             	@foreach ($errors->get('sangre') as $error)
@@ -112,7 +116,7 @@
         	<select name="tipo_contrato" class="@if ($errors->has('tipo_contrato')) is-invalid    @endif">
 		     	<option disabled selected>Seleccione Tipo de Contrato</option>
 		    	<option value="directo">Directo</option>
-		        <option value="hora">Por Hora</option>
+		        <option value="prestacion de servicio">Prestacion de Servicio</option>
 		    </select>
         	@if ($errors->has('tipo_contrato'))
             	@foreach ($errors->get('tipo_contrato') as $error)
@@ -143,10 +147,12 @@
     <div class="row">
         <div class="input-field col s4">
         	<select name="tipo_cuenta" class="@if ($errors->has('tipo_cuenta')) is-invalid    @endif">
-		     	<option disabled selected>Seleccione Tipo de Cuenta</option>
-		    	<option value="ahorro">Ahorro</option>
+		     	  <option disabled selected>Seleccione Tipo de Cuenta</option>
+		    	  <option value="ahorro">Ahorro</option>
 		        <option value="corriente">Corriente</option>
 		        <option value="daviplata">Daviplata</option>
+            <option value="nequi">Nequi</option>
+            <option value="efectivo">Efectivo</option>
 		    </select>
         	@if ($errors->has('tipo_cuenta'))
             	@foreach ($errors->get('tipo_cuenta') as $error)
@@ -269,6 +275,23 @@
           	@endif
           	<label class="white-text" for="numero_acudiente">Numero de Acudiente</label>
       	</div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="eps" id="eps" type="text" class="white-text @if ($errors->has('eps')) is-invalid    @endif">
+          @if ($errors->has('eps'))
+              @foreach ($errors->get('eps') as $error)
+                  <h5 class="left-align red-text">
+                    <blockquote>{{ $error }}</blockquote>
+                  </h5>
+              @endforeach
+            @endif
+            <label class="white-text" for="eps">Eps</label>
+        </div>
+        <div class="input-field col s6">
+          <textarea id="antecedentes" class="materialize-textarea white-text" name="antecedentes"></textarea>
+          <label for="antecedentes" class="white-text">Antecedentes Medicos y Observaciones</label>
+        </div>
       </div>
       <div class="row">
         <div class="input-field col s8">

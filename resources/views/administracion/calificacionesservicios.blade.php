@@ -2,84 +2,101 @@
 
 @section('content')
 
-<div class="row center">
-	<div class="col s12">
+<div class="row center blue-color white-text sin-espacio">
+	<div class="col s1">
+		<br><br>
+		<a href="/administracion" class="btn-floating btn-large green-color"><i class="material-icons">chevron_left</i></a>
+	</div>
+	<div class="col s11">
 		<h2 class="titulo">Detalle del Servicio</h2>
 	</div>
 </div>
 
-<div class="row">
-	<div class="card">
-        <div class="card-content">
-	        <div class="row center">
-	          	<div class="col s3">
-	          		<p><b>Fecha Servicio:</b> {{ $servicio->fecha_servicio }}</p>
+<div class="row center blue-color white-text sin-espacio">
+	<div class="col s10 offset-s1">
+		<div class="card blue-color-light">
+        	<div class="card-content">
+        		<br>
+		        <div class="row center">
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Fecha Servicio:</span></b> {{ $servicio->fecha_servicio }}</p>
+		          	</div>
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Hora Inicio:</span></b> {{ $servicio->hora_inicio }}</p>
+		          	</div>
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Plan:</span></b> {{ $servicio->plan }} Horas</p>
+		          	</div>
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Valor Plan:</span></b> {{ $servicio->valor_plan }}</p>
+		          	</div>
+		        </div>
+		        <br>
+		        <div class="row center">
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Cliente:</span></b> {{ $servicio->nombre_cliente }}</p>
+		          	</div>
+		          	<div class="col s3">
+	          		<p><b><span class="green-texto">Direccion:</span></b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
+	          		</div>
+		          	<div class="col s3">
+		          		<p><b><span class="green-texto">Email:</span></b> {{ $servicio->email }}</p>
+		          	</div>
+		          	<div class="col s3">
+	          			<p><b><span class="green-texto">Celular:</span></b> {{ $servicio->celular_contacto }}</p>
+	          		</div>
+		        </div>
+		        <br>
+		        <div class="row center">
+			        <div class="col s3">
+			      		<p><b><span class="green-texto">Fijo:</span></b> {{ $servicio->fijo_contacto }}</p>
+			      	</div>
+	          		<div class="col s3">
+	          			<p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
+	          		</div>
+			      	<div class="col s3">
+	          			<p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
+	          		</div>
+	          		<div class="col s3">
+	          			<p><b><span class="green-texto">Funcionario Seleccionado:</span></b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
+	          		</div>
+			    </div>
+			    <br>
+           		<div class="row center">
+		           	<div class="col s3">
+		          		<p><b><span class="green-texto">Fun-1:</span></b> {{ $servicio->funcionario_1->nombre_funcionario }}</p>
+		          	</div>
+		          	@if ($servicio->id_funcionario_2 != null)
+		          		<div class="col s3">
+		          			<p><b><span class="green-texto">Fun-2:</span></b> {{ $servicio->funcionario_2->nombre_funcionario }}</p>
+		          		</div>
+		          	@endif
+		          	@if ($servicio->id_funcionario_3 != null)
+			          	<div class="col s3">
+			          		<p><b><span class="green-texto">Fun-3:</span></b> {{ $servicio->funcionario_3->nombre_funcionario }} </p>
+			          	</div>
+		        	@endif
+		        	@if ($servicio->id_funcionario_4 != null)
+			          	<div class="col s3">
+			          		<p><b><span class="green-texto">Fun-4:</span></b> {{ $servicio->funcionario_4->nombre_funcionario }} </p>
+			          	</div>
+		        	@endif
+          		</div>
+          		<br>
+          		<div class="row center">
+	          		<div class="col s6">
+	          			<p><b><span class="green-texto">Calificacion:</span></b> {{ round($servicio->calificacion->cal_total,2) }} estrellas</p>
+	          		</div>
+	          		<div class="col s6">
+	          			<p><b><span class="green-texto">Comentario:</span></b> {{ $servicio->calificacion->comentario }}</p>
+	          		</div>
 	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Hora Inicio:</b> {{ $servicio->hora_inicio }}</p>
-	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Plan:</b> {{ $servicio->plan }} Horas</p>
-	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Valor Plan:</b> {{ $servicio->valor_plan }}</p>
-	          	</div>
+        	</div>
+	        <div class="card-action">
+	        	<a href="/administracion" class="btn green-color" type="button">Regresar<i class="material-icons right">send</i></a>
 	        </div>
-	        <div class="row center">
-	          	<div class="col s3">
-	          		<p><b>Cliente:</b> {{ $servicio->nombre_cliente }}</p>
-	          	</div>
-	          	<div class="col s3">
-          		<p><b>Direccion:</b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
-          		</div>
-	          	<div class="col s3">
-	          		<p><b>Email:</b> {{ $servicio->email }}</p>
-	          	</div>
-	          	<div class="col s3">
-          			<p><b>Celular:</b> {{ $servicio->celular_contacto }}</p>
-          		</div>
-	        </div>
-	        <div class="row center">
-		        <div class="col s3">
-		      		<p><b>Fijo:</b> {{ $servicio->fijo_contacto }}</p>
-		      	</div>
-          		<div class="col s3">
-          			<p><b>Estado:</b> {{ $servicio->estado }}</p>
-          		</div>
-		      	<div class="col s3">
-          			<p><b>Metodo de Pago:</b> {{ $servicio->metodo_pago }}</p>
-          		</div>
-          		<div class="col s3">
-          			<p><b>Funcionario Seleccionado:</b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
-          		</div>
-		    </div>
-           	<div class="row center">
-	           	<div class="col s3">
-	          		<p><b>Fun-1:</b> {{ $servicio->funcionario_1->nombre_funcionario }}</p>
-	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Fun-2:</b> {{ $servicio->funcionario_2->nombre_funcionario }}</p>
-	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Fun-3:</b> {{ $servicio->funcionario_3->nombre_funcionario }} </p>
-	          	</div>
-	          	<div class="col s3">
-	          		<p><b>Fun-4:</b> {{ $servicio->funcionario_4->nombre_funcionario }} </p>
-	          	</div>
-          	</div>
-          	<div class="row center">
-          		<div class="col s6">
-          			<p><b>Calificacion:</b> {{ $servicio->calificacion->cal_total }} estrellas</p>
-          		</div>
-          		<div class="col s6">
-          			<p><b>Comentario:</b> {{ $servicio->calificacion->comentario }}</p>
-          		</div>
-          	</div>
-        </div>
-        <div class="card-action">
-          <a href="/administracion" class="btn waves-effect waves-light" type="button">Regresar<i class="material-icons right">send</i></a>
-        </div>
-      </div>
+      	</div>
+	</div>
 </div>
 
 @endsection

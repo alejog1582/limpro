@@ -11,7 +11,9 @@
 			<p><b>2.</b> Nuestro personal por lo general lleva su almuerzo al sitio de trabajo.</p>
 			<p><b>3.</b> Nuestro personal utilizara los productos de limpieza suministrados por nuestros clientes.</p>
 			<p><b>4.</b> Nuestro personal realizará las actividades asignadas durante el tiempo contratado y en dado caso que actividades requeridas no sean realizadas en el tiempo contratado, podrás solicitar un nuevo servicio.</p>
-			<p><b>5.</b> Todos los servicios iniciarán a las 8:00 a.m. y finalizarán una vez se cumpla el tiempo contratado. Cuando se soliciten servicios de 4 horas estos se realizaran en la mañana de 8:00 a.m. a 12:00 m. y en la tarde de 1:00 p.m. a 5:00 p.m.</p>
+			<p><b>5.</b> Todos los servicios iniciarán a la hora seleccionada en el formulario de solicitud del servicio y finalizarán una vez se cumpla el tiempo contratado. Cuando se soliciten servicios de 4 horas estos se realizaran en la mañana de 8:00 a.m. a 12:00 m. o de 9:00 a.m a 1 p.m. y en la tarde de 1:00 p.m. a 5:00 p.m.</p>
+			<p><b>6.</b> En caso de requerir servicio de planchado, este debera ser realizado en la jornada de la mañana por salud y bienestar de nuestros colaboradores.</p>
+			<p><b>7.</b> Para realizar el canje de servicios, debes contar con 10 servicios pagados y calificados en nuestro sistema.</p>
 		</div>
 	</div>
 </div>

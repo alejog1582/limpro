@@ -41,10 +41,10 @@ class NuevoServicioPayu50 extends Notification {
 		return (new MailMessage)
 			->subject('Servicio Solicitado Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('Tu servicio se a solicitado con exito. A continuacion encontraras el link de pago que te llevara a la plataforma segura de pagos PayU.')
+			->line('Gracias por elegirnos. Recibimos tu solicitud donde la forma de pago seleccionada es PayU. El siguiente boton te llevara a la plataforma segura PayU, donde podras realizar el pago con toda la seguridad que ofrece la plataforma.')
 			->action('PayU', url('https://biz.payulatam.com/B0b12f00CA68FF2'))
-			->line('Una vez recibido el pago, le enviaremos el link donde podra seleecionar la funcionaria que le prestara el servicio. Recuede que tambien puende seleccionar la funcionaria ingresando a Mi Cuenta.')
-			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
+			->line('Una vez recibamos el pago, te enviaremos un correo de confirmacion y podras ingresar a tu cuenta para seleccionar el colaborador que te prestara el servicio.')
+			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por tu comidad.');
 	}
 
 	/**

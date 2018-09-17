@@ -24,19 +24,18 @@
         <div class="col s3"><b>Nombre</b></div>
         <div class="col s1"><b>Id</b></div>
         <div class="col s2"><b>Oficio</b></div>
-        <div class="col s2"><b>Email</b></div>
+        <div class="col s4"><b>Email</b></div>
         <div class="col s2"><b>Celular</b></div>
-        <div class="col s2"><b>Acudiente</b></div>
       </div>
       @foreach ($funcionarios as $funcionario)
       @if ($funcionario->estado == 'activo')
         <div class="row center sin-espacio">
-          <div class="col s3"><a class="green-text" href="/administracion/funcionarios/edit/{{ $funcionario->id }}">{{ $funcionario->nombre_funcionario }}</a></div>
+          <div class="col s3"><a class="green-texto" href="/administracion/funcionarios/edit/{{ $funcionario->id }}">{{ $funcionario->nombre_funcionario }}</a></div>
           <div class="col s1">{{ $funcionario->id }}</div>
           <div class="col s2">{{ $funcionario->oficio }}</div>
-          <div class="col s2">{{ $funcionario->email }}</div>
+          <div class="col s4">{{ $funcionario->email }}</div>
           <div class="col s2">{{ $funcionario->celular_contacto }}</div>
-          <div class="col s2">{{ $funcionario->nombre_acudiente }} {{ $funcionario->celular_acudiente }}</div>
+
         </div>
       @endif
       @endforeach
@@ -46,19 +45,19 @@
       <div class="row center sin-espacio">
       <br><br>
         <div class="col s3"><b>Nombre</b></div>
+        <div class="col s1"><b>Id</b></div>
         <div class="col s2"><b>Oficio</b></div>
-        <div class="col s3"><b>Email</b></div>
+        <div class="col s4"><b>Email</b></div>
         <div class="col s2"><b>Celular</b></div>
-        <div class="col s2"><b>Acudiente</b></div>
       </div>
       @foreach ($funcionarios as $funcionario)
       @if ($funcionario->estado == 'desactivo')
         <div class="row center sin-espacio">
-          <div class="col s3"><a href="/administracion/funcionarios/edit/{{ $funcionario->id }}">{{ $funcionario->nombre_funcionario }}</a></div>
+          <div class="col s3"><a class="green-texto" href="/administracion/funcionarios/edit/{{ $funcionario->id }}">{{ $funcionario->nombre_funcionario }}</a></div>
+          <div class="col s1">{{ $funcionario->id }}</div>
           <div class="col s2">{{ $funcionario->oficio }}</div>
-          <div class="col s3">{{ $funcionario->email }}</div>
+          <div class="col s4">{{ $funcionario->email }}</div>
           <div class="col s2">{{ $funcionario->celular_contacto }}</div>
-          <div class="col s2">{{ $funcionario->nombre_acudiente }} {{ $funcionario->celular_acudiente }}</div>
         </div>
       @endif
       @endforeach
@@ -85,7 +84,7 @@
       @foreach ($servicios as $servicio)
       @if ($servicio->estado == 'solicitado' )
         <div class="row center sin-espacio">
-          <div class="col s2"><a class="green-text" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
+          <div class="col s2"><a class="green-texto" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
           <div class="col s2">{{ $servicio->hora_inicio }}</div>
           <div class="col s2">{{ $servicio->plan }}</div>
           <div class="col s3">{{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</div>
@@ -107,7 +106,7 @@
       @foreach ($servicios as $servicio)
       @if ($servicio->estado == 'pagado' )
         <div class="row center sin-espacio">
-          <div class="col s2"><a class="green-text" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
+          <div class="col s2"><a class="green-texto" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
           <div class="col s2">{{ $servicio->hora_inicio }}</div>
           <div class="col s2">{{ $servicio->plan }}</div>
           <div class="col s3">{{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</div>
@@ -129,7 +128,7 @@
       @foreach ($servicios as $servicio)
       @if ($servicio->estado == 'realizado' )
         <div class="row center sin-espacio">
-          <div class="col s2"><a class="green-text" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
+          <div class="col s2"><a class="green-texto" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
           <div class="col s2">{{ $servicio->hora_inicio }}</div>
           <div class="col s2">{{ $servicio->plan }}</div>
           <div class="col s3">{{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</div>
@@ -151,7 +150,7 @@
       @foreach ($servicios as $servicio)
       @if ($servicio->estado == 'cancelado' )
         <div class="row center sin-espacio">
-          <div class="col s2"><a class="green-text" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
+          <div class="col s2"><a class="green-texto" href="/administracion/servicios/{{ $servicio->id }}">{{ $servicio->fecha_servicio }}</a></div>
           <div class="col s2">{{ $servicio->hora_inicio }}</div>
           <div class="col s2">{{ $servicio->plan }}</div>
           <div class="col s3">{{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</div>
@@ -199,7 +198,7 @@
     @foreach ($calificaciones as $calificacion)
       @if ($calificacion->cal_total >= 3.5)
         <div class="row center sin-espacio">
-          <div class="col s3"><a class="green-text" href="/administracion/calificaciones/servicios/{{ $calificacion->id_servicio }}">{{ $calificacion->id_servicio }}</a></div>
+          <div class="col s3"><a class="green-texto" href="/administracion/calificaciones/servicios/{{ $calificacion->id_servicio }}">{{ $calificacion->id_servicio }}</a></div>
           <div class="col s3">{{ $calificacion->cal_funcionario->nombre_funcionario }}</div>
           <div class="col s3"><a class="green-texto" href="/administracion/calificaciones/funcionarios/{{ $calificacion->id }}">{{ $calificacion->cal_total }}</a></div>
           <div class="col s3">{{ $calificacion->comentario }}</div>
@@ -227,11 +226,11 @@
             <div class="card-panel blue-color-light white-text">
               <div class="row">
                 <div class="col s12">
-                  <p><b>Fecha de envio:</b> {{ $mensaje->created_at }}</p>
-                  <p><b>Nombre:</b> {{ $mensaje->nombre }}</p>
-                  <p><b>Celular:</b> {{ $mensaje->celular }}</p>
-                  <p><b>Email:</b> {{ $mensaje->email }}</p>
-                  <p><b>Mensaje:</b> {{ $mensaje->mensaje }}</p>
+                  <p><b><span class="green-texto">Fecha de envio:</span></b> {{ $mensaje->created_at }}</p>
+                  <p><b><span class="green-texto">Nombre:</span></b> {{ $mensaje->nombre }}</p>
+                  <p><b><span class="green-texto">Celular:</span></b> {{ $mensaje->celular }}</p>
+                  <p><b><span class="green-texto">Email:</span></b> {{ $mensaje->email }}</p>
+                  <p><b><span class="green-texto">Mensaje:</span></b> {{ $mensaje->mensaje }}</p>
                   <p><a class="btn green-color white-text" href="/administracion/mensajes/edit/{{ $mensaje->id }}">Procesar</a></p>
                 </div>
               </div>
@@ -251,11 +250,11 @@
             <div class="card-panel blue-color-light white-text">
               <div class="row">
                 <div class="col s12">
-                  <p><b>Fecha de envio:</b> {{ $mensaje->created_at }}</p>
-                  <p><b>Nombre:</b> {{ $mensaje->nombre }}</p>
-                  <p><b>Celular:</b> {{ $mensaje->celular }}</p>
-                  <p><b>Email:</b> {{ $mensaje->email }}</p>
-                  <p><b>Mensaje:</b> {{ $mensaje->mensaje }}</p>
+                  <p><b><span class="green-texto">Fecha de envio:</span></b> {{ $mensaje->created_at }}</p>
+                  <p><b><span class="green-texto">Nombre:</span></b> {{ $mensaje->nombre }}</p>
+                  <p><b><span class="green-texto">Celular:</span></b> {{ $mensaje->celular }}</p>
+                  <p><b><span class="green-texto">Email:</span></b> {{ $mensaje->email }}</p>
+                  <p><b><span class="green-texto">Mensaje:</span></b> {{ $mensaje->mensaje }}</p>
                 </div>
               </div>
             </div>
@@ -286,15 +285,15 @@
             <div class="card-panel blue-color-light white-text">
               <div class="row">
                 <div class="col s12">
-                  <p><b>Fecha de envio:</b> {{ $aspirante->created_at }}</p>
-                  <p><b>Tipo Cedula:</b> {{ $aspirante->tipo_cedula }}</p>
-                  <p><b>Numero Cedula:</b> {{ $aspirante->numero_cedula }}</p>
-                  <p><b>Nombre:</b> {{ $aspirante->nombre }}</p>
-                  <p><b>Email:</b> {{ $aspirante->email }}</p>
-                  <p><b>Celular:</b> {{ $aspirante->celular }}</p>
-                  <p><b>Telefono Fijo:</b> {{ $aspirante->telefono }}</p>
-                  <p><b>Direccion:</b> {{ $aspirante->direccion }}</p>
-                  <p><b>Edad:</b> {{ $aspirante->edad }}</p>
+                  <p><b><span class="green-texto">Fecha de envio:</span></b> {{ $aspirante->created_at }}</p>
+                  <p><b><span class="green-texto">Tipo Cedula:</span></b> {{ $aspirante->tipo_cedula }}</p>
+                  <p><b><span class="green-texto">Numero Cedula:</span></b> {{ $aspirante->numero_cedula }}</p>
+                  <p><b><span class="green-texto">Nombre:</span></b> {{ $aspirante->nombre }}</p>
+                  <p><b><span class="green-texto">Email:</span></b> {{ $aspirante->email }}</p>
+                  <p><b><span class="green-texto">Celular:</span></b> {{ $aspirante->celular }}</p>
+                  <p><b><span class="green-texto">Telefono Fijo:</span></b> {{ $aspirante->telefono }}</p>
+                  <p><b><span class="green-texto">Direccion:</span></b> {{ $aspirante->direccion }}</p>
+                  <p><b><span class="green-texto">Edad:</span></b> {{ $aspirante->edad }}</p>
                   <p><a class="btn green-color white-text" href="/administracion/aspirante/edit/{{ $aspirante->id }}">Procesar</a></p>
                 </div>
               </div>
@@ -314,15 +313,15 @@
             <div class="card-panel blue-color-light white-text">
               <div class="row">
                 <div class="col s12">
-                <p><b>Fecha de envio:</b> {{ $aspirante->created_at }}</p>
-                  <p><b>Tipo Cedula:</b> {{ $aspirante->tipo_cedula }}</p>
-                  <p><b>Numero Cedula:</b> {{ $aspirante->numero_cedula }}</p>
-                  <p><b>Nombre:</b> {{ $aspirante->nombre }}</p>
-                  <p><b>Email:</b> {{ $aspirante->email }}</p>
-                  <p><b>Celular:</b> {{ $aspirante->celular }}</p>
-                  <p><b>Telefono Fijo:</b> {{ $aspirante->telefono }}</p>
-                  <p><b>Direccion:</b> {{ $aspirante->direccion }}</p>
-                  <p><b>Edad:</b> {{ $aspirante->edad }}</p>
+                <p><b><span class="green-texto">Fecha de envio:</span></b> {{ $aspirante->created_at }}</p>
+                  <p><b><span class="green-texto">Tipo Cedula:</span></b> {{ $aspirante->tipo_cedula }}</p>
+                  <p><b><span class="green-texto">Numero Cedula:</span></b> {{ $aspirante->numero_cedula }}</p>
+                  <p><b><span class="green-texto">Nombre:</span></b> {{ $aspirante->nombre }}</p>
+                  <p><b><span class="green-texto">Email:</span></b> {{ $aspirante->email }}</p>
+                  <p><b><span class="green-texto">Celular:</span></b> {{ $aspirante->celular }}</p>
+                  <p><b><span class="green-texto">Telefono Fijo:</span></b> {{ $aspirante->telefono }}</p>
+                  <p><b><span class="green-texto">Direccion:</span></b> {{ $aspirante->direccion }}</p>
+                  <p><b><span class="green-texto">Edad:</span></b> {{ $aspirante->edad }}</p>
                 </div>
               </div>
             </div>

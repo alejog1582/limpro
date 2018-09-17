@@ -70,8 +70,7 @@
           <option value="8 a.m">8 a.m</option>
             <option value="9 a.m">9 a.m</option>
             <option value="1 p.m">1 p.m</option>
-            <option value="2 p.m">2 p.m</option>
-        </select>
+          </select>
         @if ($errors->has('hora_inicio'))
             @foreach ($errors->get('hora_inicio') as $error)
               <h5 class="left-align">

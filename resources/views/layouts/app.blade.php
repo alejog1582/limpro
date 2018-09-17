@@ -30,6 +30,9 @@
         input{
           border-bottom: 2px #7AB518 solid !important;
         }
+        textarea{
+            border-bottom: 2px #7AB518 solid !important;
+        }
         .select-wrapper input.select-dropdown{
           color: white !important;
           font-size: 1.25rem !important;

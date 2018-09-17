@@ -20,86 +20,98 @@ document.getElementById('card_editar').style.display = 'block';}
 
 
 <div class="row center sin-espacio blue-color">
-    <div class="col s6">
+    <div class="col s8 offset-s2">
       <div class="card blue-color-light white-text">
         <div class="card-image center-align">
           <img style="height: 100%; width: 100%" src="{{ $funcionario->url_foto }}">
         </div>
         <div class="card-content">
           <div class="row">
-          	<div class="col s4">
-          		<p><b>Tipo de documento:</b> {{ $funcionario->tipo_cedula }}</p>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Tipo de documento:</span></b> {{ $funcionario->tipo_cedula }}</p>
           	</div>
-          	<div class="col s4">
-          		<p><b>Numero de documento:</b> {{ $funcionario->numero_cedula }}</p>
-          	</div>
-          	<div class="col s4">
-          		<p><b>Fecha de Nacimiento:</b> {{ $funcionario->fecha_nacimiento }}</p>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Numero de documento:</span></b> {{ $funcionario->numero_cedula }}</p>
           	</div>
           </div>
           <div class="row">
           	<div class="col s6">
-          		<p><b>Sexo:</b> {{ $funcionario->sexo }}</p>
+          		<p><b><span class="green-texto">Fecha de Nacimiento:</span></b> {{ $funcionario->fecha_nacimiento }}</p>
           	</div>
           	<div class="col s6">
-          		<p><b>Tipo de Sangre:</b> {{ $funcionario->tipo_sangre }}</p>
-          	</div>
-          </div>
-          <div class="row">
-          	<div class="col s4">
-          		<p><b>Tipo de cuenta:</b> {{ $funcionario->tipo_cuenta }}</p>
-          	</div>
-          	<div class="col s4">
-          		<p><b>Banco:</b> {{ $funcionario->banco }}</p>
-          	</div>
-          	<div class="col s4">
-          		<p><b>Numero de Cuenta:</b> {{ $funcionario->numero_cuenta }}</p>
+          		<p><b><span class="green-texto">Sexo:</span></b> {{ $funcionario->sexo }}</p>
           	</div>
           </div>
           <div class="row">
           	<div class="col s6">
-          		<p><b>Direccion Casa:</b> {{ $funcionario->direccion_residencia }}</p>
+          		<p><b><span class="green-texto">Tipo de Sangre:</span></b> {{ $funcionario->tipo_sangre }}</p>
           	</div>
           	<div class="col s6">
-          		<p><b>Email:</b> {{ $funcionario->email }}</p>
+          		<p><b><span class="green-texto">Tipo de cuenta:</span></b> {{ $funcionario->tipo_cuenta }}</p>
           	</div>
           </div>
           <div class="row">
           	<div class="col s6">
-          		<p><b>Celular:</b> {{ $funcionario->celular_contacto }}</p>
+          		<p><b><span class="green-texto">Banco:</span></b> {{ $funcionario->banco }}</p>
           	</div>
           	<div class="col s6">
-          		<p><b>Fijo:</b> {{ $funcionario->fijo_contacto }}</p>
+          		<p><b><span class="green-texto">Numero de Cuenta:</span></b> {{ $funcionario->numero_cuenta }}</p>
           	</div>
           </div>
           <div class="row">
           	<div class="col s6">
-          		<p><b>Acudiente:</b> {{ $funcionario->nombre_acudiente }}</p>
+          		<p><b><span class="green-texto">Direccion Casa:</span></b> {{ $funcionario->direccion_residencia }}</p>
           	</div>
           	<div class="col s6">
-          		<p><b>Celular Acudiente:</b> {{ $funcionario->celular_acudiente }}</p>
+          		<p><b><span class="green-texto">Eps:</span></b> {{ $funcionario->eps }}</p>
+          	</div>
+          </div>
+          <div class="row">
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Email:</span></b> {{ $funcionario->email }}</p>
+          	</div>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Fecha Vinculacion:</span></b> {{ $funcionario->fecha_vinculacion }}</p>
+          	</div>
+          </div>
+          <div class="row">
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Celular:</span></b> {{ $funcionario->celular_contacto }}</p>
+          	</div>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Fijo:</span></b> {{ $funcionario->fijo_contacto }}</p>
+          	</div>
+          </div>
+          <div class="row">
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Acudiente:</span></b> {{ $funcionario->nombre_acudiente }}</p>
+          	</div>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Celular Acudiente:</span></b> {{ $funcionario->celular_acudiente }}</p>
+          	</div>
+          </div>
+          <div class="row">
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Tipo de Contrato:</span></b> {{ $funcionario->tipo_contrato }}</p>
+          	</div>
+          	<div class="col s6">
+          		<p><b><span class="green-texto">Oficio:</span></b> {{ $funcionario->oficio }}</p>
+          	</div>
+          </div>
+          <div class="row">
+          	<div class="col s12">
+          		<p><b><span class="green-texto">Antecedentes Medicos y Observaciones:</span></b> {{ $funcionario->antecedentes_medicos }}</p>
           	</div>
           </div>
           <div class="row">
           	<div class="col s4">
-          		<p><b>Tipo de Contrato:</b> {{ $funcionario->tipo_contrato }}</p>
+          		<p><b><span class="green-texto">Servicios Realizados:</span></b> {{ $servicios_realizados }}</p>
           	</div>
           	<div class="col s4">
-          		<p><b>Oficio:</b> {{ $funcionario->oficio }}</p>
+          		<p><b><span class="green-texto">Servicios Calificados:</span></b> {{ $servicios_calificados }}</p>
           	</div>
           	<div class="col s4">
-          		<p><b>Fecha Vinculacion:</b> {{ $funcionario->fecha_vinculacion }}</p>
-          	</div>
-          </div>
-          <div class="row">
-          	<div class="col s4">
-          		<p><b>Servicios Realizados:</b> {{ $servicios_realizados }}</p>
-          	</div>
-          	<div class="col s4">
-          		<p><b>Servicios Calificados:</b> {{ $servicios_calificados }}</p>
-          	</div>
-          	<div class="col s4">
-          		<p><b>Calificacion:</b> {{ $calificacion }}</p>
+          		<p><b><span class="green-texto">Calificacion:</span></b> {{ $calificacion }}</p>
           	</div>
           </div>
         </div>
@@ -111,7 +123,10 @@ document.getElementById('card_editar').style.display = 'block';}
         </div>
       </div>
     </div>
-    <div class="col s4 offset-s1">
+  </div>
+
+  <div class="row center blue-color white-text sin-espacio">
+  	<div class="col s8 offset-s2">
 		<div class="card blue-color-black white-text" id="card_editar" style="display: none;">
 		<form action="/administracion/funcionarios/edit/save" method="post">
 		{{ csrf_field() }}
@@ -124,16 +139,36 @@ document.getElementById('card_editar').style.display = 'block';}
 			        			<option selected value="ahorro">Ahorro</option>
 						        <option value="corriente">Corriente</option>
 						        <option value="daviplata">Daviplata</option>
+						        <option value="nequi">Nequi</option>
+						        <option value="efectivo">Efectivo</option>
 			        		@endif
 			        		@if ( $funcionario->tipo_cuenta	== 'corriente')
 			        			<option value="ahorro">Ahorro</option>
 						        <option selected value="corriente">Corriente</option>
 						        <option value="daviplata">Daviplata</option>
+						        <option value="nequi">Nequi</option>
+						        <option value="efectivo">Efectivo</option>
 			        		@endif
 			        		@if ( $funcionario->tipo_cuenta	== 'daviplata')
 			        			<option value="ahorro">Ahorro</option>
 						        <option value="corriente">Corriente</option>
 						        <option selected value="daviplata">Daviplata</option>
+						        <option value="nequi">Nequi</option>
+						        <option value="efectivo">Efectivo</option>
+			        		@endif
+			        		@if ( $funcionario->tipo_cuenta	== 'nequi')
+			        			<option value="ahorro">Ahorro</option>
+						        <option value="corriente">Corriente</option>
+						        <option value="daviplata">Daviplata</option>
+						        <option selected value="nequi">Nequi</option>
+						        <option value="efectivo">Efectivo</option>
+			        		@endif
+			        		@if ( $funcionario->tipo_cuenta	== 'efectivo')
+			        			<option value="ahorro">Ahorro</option>
+						        <option value="corriente">Corriente</option>
+						        <option value="daviplata">Daviplata</option>
+						        <option value="nequi">Nequi</option>
+						        <option selected value="efectivo">Efectivo</option>
 			        		@endif
 					    </select>
 			        	@if ($errors->has('tipo_cuenta'))
@@ -280,9 +315,26 @@ document.getElementById('card_editar').style.display = 'block';}
 			        </div>
         		</div>
         		<div class="row">
+        			<div class="input-field col s6">
+			      		<input name="eps" id="eps" type="text" value="{{ $funcionario->eps }}" class="white-text @if ($errors->has('eps')) is-invalid    @endif">
+			         	@if ($errors->has('eps'))
+			            	@foreach ($errors->get('eps') as $error)
+			              		<h5 class="left-align">
+			                		<blockquote>{{ $error }}</blockquote>
+			              		</h5>
+			            	@endforeach
+			          	@endif
+			          	<label class="white-text" for="eps">Eps</label>
+			      	</div>
+			      	<div class="input-field col s6">
+			      		<input name="antecedentes" id="antecedentes" type="text" value="{{ $funcionario->antecedentes_medicos }}" class="white-text">
+			          	<label class="white-text" for="antecedentes">Antecedentes Medicos y Observaciones</label>
+			      	</div>
+        		</div>
+        		<div class="row">
         			<div class="input-field col s12">
-			        	<input id="fecha_desvinculacion" name="fecha_desvinculacion" type="text" class="datepicker">
-            			<label class="white-text" for="fecha_desvinculacion"> Selecciona la fecha de vinculacion</label>
+			        	<input id="fecha_desvinculacion" name="fecha_desvinculacion" type="text" class="datepicker white-text">
+            			<label class="white-text" for="fecha_desvinculacion"> Selecciona la fecha de desvinculacion</label>
 			       	</div>
         		</div>
 		</div>

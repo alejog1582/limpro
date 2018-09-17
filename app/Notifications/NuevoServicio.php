@@ -41,12 +41,14 @@ class NuevoServicio extends Notification {
 		return (new MailMessage)
 			->subject('Servicio Solicitado Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('Tu servicio se a solicitado con exito. A continuacion encontraras las cuentas en donde podras realizar el pago de tu servicio.')
+			->line('Gracias por elegirnos. Recibimos tu solicitud donde la forma de pago seleccionada a sido consignacion bancaria. A continuacion encontraras los numeros de cuenta a los cuales podras consignar:')
 			->line('Banco Davivienda: 004470467319 ahorros')
 			->line('Bancolombia: 03118262548 ahorros')
-			->line('Recuerda enviar el soporte del pago al correo soportes@limpro.com.co')
-			->action('Ingrese a su cuenta', url('/micuenta'))
-			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
+			->line('Recuerda que el valor a pagar es: $ ' . $this->servicio->valor_plan)
+			->line('Una vez realizado el pago debes enviar el soporte al email servicios@solsercol.co o via whatsapp al numero  350 4591097 para proceder con la asignacion del personal disponible para atender tu solicitud.')
+			->action('Ingresa a tu cuenta', url('/micuenta'))
+			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por s
+				tu comidad.');
 	}
 
 	/**

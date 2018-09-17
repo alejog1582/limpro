@@ -25,6 +25,8 @@ class CreateFuncionariosTable extends Migration {
 			$table->string('fecha_desvinculacion')->nullable();
 			$table->string('tipo_contrato');
 			$table->string('talla_uniforme');
+			$table->string('eps');
+			$table->string('antecedentes_medicos')->nullable();
 			$table->string('tipo_cuenta')->nullable();
 			$table->string('banco')->nullable();
 			$table->string('numero_cuenta')->nullable();

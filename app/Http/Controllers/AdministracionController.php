@@ -57,10 +57,12 @@ class AdministracionController extends Controller {
 			'fijo_contacto' => $request->input('fijo'),
 			'nombre_acudiente' => $request->input('nombre_acudiente'),
 			'celular_acudiente' => $request->input('numero_acudiente'),
+			'eps' => $request->input('eps'),
+			'antecedentes_medicos' => $request->input('antecedentes'),
 			'estado' => 'activo',
 		]);
 		$servicio = Servicio::create([
-			'fecha_servicio' => '2017-05-08',
+			'fecha_servicio' => '2017-01-01',
 			'plan' => '4',
 			'valor_plan' => 50000,
 			'hora_inicio' => '8 a.m',
@@ -88,6 +90,12 @@ class AdministracionController extends Controller {
 			'comentario' => 'El servicio prestado a cumplido con las expectativas.',
 
 		]);
+
+		$servicio_this = Servicio::find($servicio->id);
+
+		$servicio_this->id_calificacion = $calificacion->id;
+
+		$servicio_this->save();
 
 		return view('administracion.newfuncionario', [
 			'funcionario' => $funcionario,

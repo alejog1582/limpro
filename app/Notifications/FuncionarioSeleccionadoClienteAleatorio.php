@@ -40,9 +40,8 @@ class FuncionarioSeleccionadoClienteAleatorio extends Notification {
 		return (new MailMessage)
 			->subject('Funcionario Aleatorio seleccionado Servicio Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('Nosotros seleccionaremos el mejor funcionario para tu servicio.')
-			->line('Recibiras todos los datos del funcionario via correo electronico.')
-			->line('Recuerda calificar el servicio una vez realizado para poder brindar el mejor servicio.')
+			->line('Queremos generar satisfaccion y confianza a nuestros clientes, por lo cual seleccionaremos una de nuestras funcionarias disponibles.')
+			->line('Recibiras todos los datos de nuestra funcionaria via correo electronico. ')
 			->action('Ingrese a su cuenta', url('/micuenta'))
 			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
 	}

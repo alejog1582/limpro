@@ -29,8 +29,6 @@ class NewFuncionarioRequest extends FormRequest {
 			'sangre' => 'required',
 			'fecha_vinculacion' => 'required',
 			'tipo_contrato' => 'required',
-			'banco' => 'required',
-			'cuenta' => 'required',
 			'oficio' => 'required',
 			'fecha_nacimiento' => 'required',
 			'direccion_residencia' => 'required',
@@ -39,6 +37,7 @@ class NewFuncionarioRequest extends FormRequest {
 			'nombre_acudiente' => 'required',
 			'numero_acudiente' => 'required',
 			'tipo_cuenta' => 'required',
+			'eps' => 'required',
 
 		];
 	}
@@ -62,6 +61,7 @@ class NewFuncionarioRequest extends FormRequest {
 			'email.required' => 'El campo Email es obligatorio',
 			'nombre_acudiente.required' => 'El campo Nombre de Acudiente es obligatorio',
 			'numero_acudiente.required' => 'El campo Numero de Acudiente es obligatorio',
+			'eps.required' => 'El campo Eps es obligatorio',
 
 		];
 	}

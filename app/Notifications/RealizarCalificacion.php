@@ -40,7 +40,7 @@ class RealizarCalificacion extends Notification {
 		return (new MailMessage)
 			->subject('Califica el Servicio Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('El servicio del dia ' . $this->servicio->fecha_servicio . ' a sido realizado satisfactoriamente.  Ingrese en el siguente link y realice la calificacion del servicio prestado para seguir mejorando nuestra atencion.')
+			->line('Seguimos trabajando para construir una mejor compañía de servicio de limpieza, motivo por el cual agradecemos su colaboración realizando la calificación del servicio prestado en el siguiente Link. Gracias y esperamos contar con usted(es) en una próxima ocasión.')
 			->action('Calificar Servicio', url('/seleccion/servicio/' . $this->servicio->id))
 			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
 	}

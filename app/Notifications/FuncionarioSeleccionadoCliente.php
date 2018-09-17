@@ -40,7 +40,9 @@ class FuncionarioSeleccionadoCliente extends Notification {
 		return (new MailMessage)
 			->subject('Funcionario Seleccionado Servicio Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('Se a seleccionado el funcianario ' . $this->servicio->funcionario_selec->nombre_funcionario . ' para el servicio solicitado el dia ' . $this->servicio->fecha_servicio . ' El personal llegara a la direccion del servicio a la hora indicada y se debe identificarse plenamente. Culquier novedad por favor comunicarse al 3213857042')
+			->line('Tu seleccion ha sido exitosa. La funcionaria: ' . $this->servicio->funcionario_selec->nombre_funcionario . ' llegará a la direccion el dia ' . $this->servicio->fecha_servicio . ' a las ' . $this->servicio->hora_inicio . ' , identificandose previamente como nuestra funcionaria.')
+			->line('Cualquier novedad por favor informarla inmediatamente al 350 459 10 97.')
+			->line('Recuerda calificar el servicio una vez realizado, para poder brindar una mejor experiencia.')
 			->action('Ingrese a su cuenta', url('/micuenta'))
 			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
 	}

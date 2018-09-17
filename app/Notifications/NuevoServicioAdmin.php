@@ -40,9 +40,9 @@ class NuevoServicioAdmin extends Notification {
 		return (new MailMessage)
 			->subject('Nuevo Servicio Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
-			->line('Se a generado un nuevo servicio para el dia ' . $this->servicio->fecha_servicio)
+			->line('Se a generado un nuevo servicio para el dia ' . $this->servicio->fecha_servicio . ' con un plan de: ' . $this->servicio->plan . 'horas')
 			->action('Ingrese a su cuenta', url('/micuenta'))
-			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por su comidad.');
+			->salutation(' Gracias por preferiri Limpro, recuerde que trabajamos por tu comidad.');
 	}
 
 	/**

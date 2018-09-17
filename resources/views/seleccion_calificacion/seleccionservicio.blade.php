@@ -178,15 +178,15 @@ document.getElementById('amabilidad').value = '5'};
             <div class="card-content">
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Fecha Servicio:</b> {{ $servicio->fecha_servicio }}</p>
+                        <p><b><span class="green-texto">    </span>Fecha Servicio:</b> {{ $servicio->fecha_servicio }}</p>
                     </div>
                     <div class="col s12 m6">
-                        <p><b>Hora Inicio:</b> {{ $servicio->hora_inicio }}</p>
+                        <p><b><span class="green-texto">Hora Inicio:</span></b> {{ $servicio->hora_inicio }}</p>
                     </div>
                	</div>
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Plan:</b> {{ $servicio->plan }} Horas</p>
+                        <p><b><span class="green-texto">Plan:</span></b> {{ $servicio->plan }} Horas</p>
                     </div>
                     <div class="col s12 m6">
                         <p><b>Valor Plan: $ </b>
@@ -198,22 +198,12 @@ document.getElementById('amabilidad').value = '5'};
                 </div>
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Metodo de Pago:</b> {{ $servicio->metodo_pago }}</p>
+                        <p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
                     </div>
                 	<div class="col s12 m6">
-                        <p><b>Estado:</b> {{ $servicio->estado }}</p>
+                        <p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
                     </div>
                 </div>
-                <!--<div class="row">
-                    <div class="col s12 m6">
-                        <p><b>Direccion:</b> {{ $servicio->direccion_servicio }}</p>
-                    </div>
-                    <div class="col s12 m6">
-                        @if ($servicio->id_funcionario_selec != null)
-                            <p><b>Funcionario Seleccionado:</b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
-                        @endif
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
@@ -247,16 +237,17 @@ document.getElementById('amabilidad').value = '5'};
                                     <div class="col s10">
                                         <img src="{{ $servicio->funcionario_1->url_foto }}" style="width: 100%; height: 50%">
                                         <br>
-                                        Nombre: {{ $servicio->funcionario_1->nombre_funcionario }}
+                                        <span class="green-texto">Nombre:</span> {{ $servicio->funcionario_1->nombre_funcionario }}
                                         <br>
-                                        Numero de servicios:
+                                        <span class="green-texto">Numero de servicios:</span>
                                         @if ($i_1 == null)
                                             0
                                         @endif{{ $i_1 }}
                                         <br>
-                                        Servicios Calificados: {{ $x_1 }}
+                                        <span class="green-texto">Servicios Calificados:</span> {{ $x_1 }}
                                         <br>
-                                        Calificacion:  {{ round($cal_1, 2) }}
+                                        <span class="green-texto">Calificacion Total:</span>  {{ round($cal_1, 2) }}
+                                        <br>
                                         <br>
                                         <a href="/calificacion/funcionario/{{ $servicio->funcionario_1->id }}" class="green-texto" target="_blank">Ver calificaciones</a>
                                     </div>
@@ -274,17 +265,18 @@ document.getElementById('amabilidad').value = '5'};
 	                                <div class="col s10">
 	                                    <img src="{{ $servicio->funcionario_2->url_foto }}" style="width: 100%; height: 50%">
 	                                    <br>
-	                                    Nombre: {{ $servicio->funcionario_2->nombre_funcionario }}
+	                                    <span class="green-texto">Nombre:</span> {{ $servicio->funcionario_2->nombre_funcionario }}
 	                                    <br>
-	                                    Numero de servicios:
+	                                    <span class="green-texto">Numero de servicios:</span>
 	                                    @if ($i_2 == null)
 	                                        0
 	                                    @endif{{ $i_2 }}
 	                                    <br>
-	                                    Servicios Calificados: {{ $x_2 }}
+	                                    <span class="green-texto">Servicios Calificados:</span> {{ $x_2 }}
 	                                    <br>
-	                                    Calificacion: {{ round($cal_2, 2) }}
+	                                    <span class="green-texto">Calificacion Total:</span> {{ round($cal_2, 2) }}
 	                                    <br>
+                                        <br>
 	                                    <a href="/calificacion/funcionario/{{ $servicio->funcionario_2->id }}" class="green-texto" target="_blank">Ver calificaciones</a>
 	                                </div>
                            		</div>
@@ -302,17 +294,18 @@ document.getElementById('amabilidad').value = '5'};
 	                                <div class="col s10">
 	                                    <img src="{{ $servicio->funcionario_3->url_foto }}" style="width: 100%; height: 50%">
 	                                    <br>
-	                                    Nombre: {{ $servicio->funcionario_3->nombre_funcionario }}
+	                                    <span class="green-texto">Nombre:</span> {{ $servicio->funcionario_3->nombre_funcionario }}
 	                                    <br>
-	                                    Numero de servicios:
+	                                    <span class="green-texto">Numero de servicios:</span>
 	                                    @if ($i_3 == null)
 	                                        0
 	                                    @endif{{ $i_3 }}
 	                                    <br>
-	                                    Servicios Calificados: {{ $x_3 }}
+	                                    <span class="green-texto">Servicios Calificados:</span> {{ $x_3 }}
 	                                    <br>
-	                                    Calificacion: {{ round($cal_3, 2) }}
+	                                    <span class="green-texto">Calificacion Total:</span> {{ round($cal_3, 2) }}
 	                                    <br>
+                                        <br>
 	                                    <a href="/calificacion/funcionario/{{ $servicio->funcionario_3->id }}" class="green-texto" target="_blank">Ver calificaciones</a>
 	                                </div>
 	                            </div>
@@ -330,17 +323,18 @@ document.getElementById('amabilidad').value = '5'};
 	                                <div class="col s10">
 	                                    <img src="{{ $servicio->funcionario_4->url_foto }}" style="width: 100%; height: 50%">
 	                                    <br>
-	                                    Nombre: {{ $servicio->funcionario_4->nombre_funcionario }}
+	                                    <span class="green-texto">Nombre:</span> {{ $servicio->funcionario_4->nombre_funcionario }}
 	                                    <br>
-	                                    Numero de servicios:
+	                                    <span class="green-texto">Numero de servicios:</span>
 	                                    @if ($i_4 == null)
 	                                        0
 	                                    @endif{{ $i_4 }}
 	                                    <br>
-	                                    Servicios Calificados: {{ $x_4 }}
+	                                    <span class="green-texto">Servicios Calificados:</span> {{ $x_4 }}
 	                                    <br>
-	                                    Calificacion: {{ round($cal_4, 2) }}
+	                                    <span class="green-texto">Calificacion Total:</span> {{ round($cal_4, 2) }}
 	                                    <br>
+                                        <br>
 	                                    <a href="/calificacion/funcionario/{{ $servicio->funcionario_4->id }}" class="green-texto" target="_blank">Ver calificaciones</a>
 	                                </div>
 	                            </div>
@@ -388,38 +382,28 @@ document.getElementById('amabilidad').value = '5'};
             <div class="card-content">
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Fecha Servicio:</b> {{ $servicio->fecha_servicio }}</p>
+                        <p><b><span class="green-texto">Fecha Servicio:</span></b> {{ $servicio->fecha_servicio }}</p>
                     </div>
                     <div class="col s12 m6">
-                        <p><b>Hora Inicio:</b> {{ $servicio->hora_inicio }}</p>
+                        <p><b><span class="green-texto">Hora Inicio:</span></b> {{ $servicio->hora_inicio }}</p>
                     </div>
                	</div>
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Plan:</b> {{ $servicio->plan }} Horas</p>
+                        <p><b><span class="green-texto">Plan:</span></b> {{ $servicio->plan }} Horas</p>
                     </div>
                     <div class="col s12 m6">
-                        <p><b>Valor Plan:</b> {{ $servicio->valor_plan }}</p>
+                        <p><b><span class="green-texto">Valor Plan:</span></b> {{ $servicio->valor_plan }}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m6">
-                        <p><b>Metodo de Pago:</b> {{ $servicio->metodo_pago }}</p>
+                        <p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
                     </div>
                 	<div class="col s12 m6">
-                        <p><b>Estado:</b> {{ $servicio->estado }}</p>
+                        <p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
                     </div>
                 </div>
-                <!--<div class="row">
-                    <div class="col s12 m6">
-                        <p><b>Direccion:</b> {{ $servicio->direccion_servicio }}</p>
-                    </div>
-                    <div class="col s12 m6">
-                        @if ($servicio->id_funcionario_selec != null)
-                            <p><b>Funcionario Seleccionado:</b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
-                        @endif
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
@@ -435,7 +419,7 @@ document.getElementById('amabilidad').value = '5'};
                         <p>Selecciona la calificacion de tu servicio:</p>
                     <div class="row">
                         <div class="col s6">
-                        	<p>Calidad:</p>
+                        	<p><span class="green-texto">Calidad:</span></p>
                         </div>
                         <div class="col s6">
                             <input id="calidad" type="hidden" name="calidad" class="@if ($errors->has('calidad')) is-invalid    @endif">
@@ -459,7 +443,7 @@ document.getElementById('amabilidad').value = '5'};
                     </div>
                     <div class="row">
 		                <div class="col s6">
-                            <p>Puntualidad:</p>
+                            <p><span class="green-texto">Puntualidad:</span></p>
                         </div>
                         <div class="col s6">
                             <input id="puntualidad" type="hidden" name="puntualidad" class="@if ($errors->has('puntualidad')) is-invalid    @endif">
@@ -483,7 +467,7 @@ document.getElementById('amabilidad').value = '5'};
                     </div>
                     <div class="row">
                         <div class="col s6">
-                            <p>Presentacion Personal:</p>
+                            <p><span class="green-texto">Presentacion Personal:</span></p>
                         </div>
                         <div class="col s6">
                             <input id="pp" type="hidden" name="pp" class="@if ($errors->has('pp')) is-invalid    @endif">
@@ -507,7 +491,7 @@ document.getElementById('amabilidad').value = '5'};
         		        </div>
                         <div class="row">
                             <div class="col s6">
-                                <p>Amabilidad:</p>
+                                <p><span class="green-texto">Amabilidad:</span></p>
                             </div>
                             <div class="col s6">
                                 <input id="amabilidad" type="hidden" name="amabilidad" class="@if ($errors->has('amabilidad')) is-invalid    @endif">

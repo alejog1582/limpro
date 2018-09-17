@@ -11,7 +11,6 @@ use App\Http\Requests\CalificacionRequest;
 use App\Http\Requests\NewContactoRequest;
 use App\Http\Requests\SelecFuncionarioRequest;
 use App\Notifications\CalificacionRealizada;
-use App\Notifications\CalificacionRealizadaCliente;
 use App\Notifications\FuncionarioSeleccionado;
 use App\Notifications\FuncionarioSeleccionadoCliente;
 use App\Notifications\FuncionarioSeleccionadoClienteAleatorio;
@@ -211,6 +210,7 @@ class PagesController extends Controller {
 
 		return view('cliente.selfuncionario', [
 			'funcionario' => $funcionario,
+			'servicio' => $servicio,
 		]);
 	}
 	public function SaveCalificacion(CalificacionRequest $request) {
@@ -244,11 +244,6 @@ class PagesController extends Controller {
 			'name' => 'Limpro Notificaciones',
 			'email' => 'limpro.notificaciones@gmail.com',
 		])->notify(new CalificacionRealizada($servicio));
-
-		(new User)->forceFill([
-			'name' => $servicio->nombre_cliente,
-			'email' => $servicio->email,
-		])->notify(new CalificacionRealizadaCliente($servicio, $calificacion));
 
 		return view('cliente.calificar', [
 			'calificacion' => $calificacion,
