@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification" content="P4At6vdOx5CUQoZGrLC6GV4mezGQ9nA2cL1LnC2LzZk" />
+    <meta name="google-site-verification" content="ICH6EWzAzcU_d1p-8daaK9qpk9i-c1ow4se6az1f5eY" />
+    <meta name="google-site-verification" content="ICH6EWzAzcU_d1p-8daaK9qpk9i-c1ow4se6az1f5eY" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
