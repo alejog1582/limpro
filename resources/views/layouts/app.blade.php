@@ -171,6 +171,15 @@
         [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after{
           background-color: white !important;
         }
+        [type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after{
+            border: 2px solid white !important;
+        }
+        [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after{
+            background-color: #7AB518 !important;
+        }
+        [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after{
+            border: 2px solid #7AB518 !important;
+        }
     </style>
     <!--<link rel="stylesheet" href="{{ asset('css/estilos_propios.css') }}">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -414,7 +423,7 @@
             </div>
 
         <div class="row blue-color center">
-            <div class="col s12">Esta magina a sido desarrollada por <a class="green-texto" href="http://www.tekquo.com.co/">TekQuo</a> © 2018 TekQuo Todos los derechos reservados.</div>
+            <div class="col s12">Esta pagina a sido desarrollada por <a class="green-texto" href="http://www.tekquo.com.co/">TekQuo</a> © 2018 TekQuo Todos los derechos reservados.</div>
         </div>
         </footer>
     </div>

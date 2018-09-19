@@ -13,12 +13,26 @@
                 {{ csrf_field() }}
                 <div class="row">
                 	<div class="input-field col s12 m6">
-      					<select name="tipo_cedula_aspirante" class="@if ($errors->has('tipo_cedula_aspirante')) is-invalid    @endif">
-		     				<option disabled selected>Seleccione tipo de cedula</option>
-		    				<option value="cc">CC</option>
-		        			<option value="ce">CE</option>
-		    			</select>
-        				@if ($errors->has('tipo_cedula_aspirante'))
+                        <div class="row">
+                            <div class="col s12">
+                                <span class="white-text">Tipo de Documento:</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <p><label>
+                                    <input name="tipo_cedula_aspirante" type="radio" checked value="cc" />
+                                    <span class="white-text">CC</span>
+                                </label></p>
+                            </div>
+                            <div class="col s6">
+                                <p><label>
+                                    <input name="tipo_cedula_aspirante" type="radio" value="ce" />
+                                    <span class="white-text">CE</span>
+                                </label></p>
+                            </div>
+                        </div>
+                		@if ($errors->has('tipo_cedula_aspirante'))
             				@foreach ($errors->get('tipo_cedula_aspirante') as $error)
               						<h5 class="left-align red-text">
                 						<blockquote>{{ $error }}</blockquote>
@@ -26,7 +40,7 @@
             				@endforeach
         				@endif
         			</div>
-        			<div class="input-field col s12 m6">
+                    <div class="input-field col s12 m6">
         				<input name="numero_cedula_aspirante" id="numero_cedula_aspirante" type="text" class="white-text @if ($errors->has('numero_cedula_aspirante')) is-invalid    @endif">
         				@if ($errors->has('numero_cedula_aspirante'))
         				   	@foreach ($errors->get('numero_cedula_aspirante') as $error)
@@ -50,7 +64,7 @@
                             @endforeach
                         @endif
                     </div>
-                    <div class="input-field col s6">
+                    <div class="input-field col s12 m6">
                         <input id="email_aspirante" name="email_aspirante" type="email" class="white-text @if ($errors->has('email_aspirante')) is-invalid    @endif">
                         <label class="white-text" for="email_aspirante">Email</label>
                         @if ($errors->has('email_aspirante'))
@@ -63,7 +77,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12 m6">
                         <input id="celular_aspirante" name="celular_aspirante" type="number" class="white-text @if ($errors->has('celular_aspirante')) is-invalid    @endif">
                         <label class="white-text" for="celular_aspirante">Celular</label>
                         @if ($errors->has('celular_aspirante'))
@@ -80,7 +94,7 @@
         			</div>
                 </div>
                 <div class="row">
-                	<div class="input-field col s6">
+                	<div class="input-field col s12 m6">
                         <input id="direccion_aspirante" name="direccion_aspirante" type="text" class="white-text @if ($errors->has('direccion_aspirante')) is-invalid    @endif">
                         <label class="white-text" for="direccion_aspirante">Direccion de Residencia</label>
                         @if ($errors->has('direccion_aspirante'))
@@ -91,7 +105,7 @@
                             @endforeach
                         @endif
                     </div>
-                    <div class="input-field col s6">
+                    <div class="input-field col s12 m6">
                         <input id="edad_aspirante" name="edad_aspirante" type="text" class="white-text @if ($errors->has('edad_aspirante')) is-invalid    @endif">
                         <label class="white-text" for="edad_aspirante">Edad</label>
                         @if ($errors->has('edad_aspirante'))
