@@ -4,7 +4,7 @@
 
 <div class="row center blue-color sin-espacio">
     <br>
-   	<div class="col s4 offset-s4">
+   	<div class="col s12 m4 offset-m4">
      	<div class="card-panel blue-color-black">
      		@if ($funcionario->id != 1)
      			<span class="white-text">Tu seleccion ha sido exitosa. La funcionaria: <b><span class="green-texto"> {{ $funcionario->nombre_funcionario }}</span></b> llegará a la direccion el dia <span class="green-texto"> {{ $servicio->fecha_servicio }}</span> a las <span class="green-texto">{{ $servicio->hora_inicio }}</span>, identificandose previamente como nuestra funcionaria.<br><br>Cualquier novedad por favor informarla inmediatamente al <span class="green-texto">350 459 10 97.</span> <br>   <br>Recuerda calificar el servicio una vez realizado, para poder brindar una mejor experiencia.

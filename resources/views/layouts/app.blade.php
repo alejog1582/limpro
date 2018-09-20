@@ -410,7 +410,7 @@
                     <div class="row">
                         <div class="col s12">
                             <h5 class="titulo">Contacto</h5>
-                            <p>- Bogotá, D.C. - Colombia<br><a href="tel:+573504591097" class="white-text">- Ventas: (+57) 350 4591097<br></a>- Carrera 7 No. 156 - 10 Torre Krystal Oficina 1707<br><a href="mailto:servicios@limpro.co" class="white-text">- servicios@limpr.co</a></p>
+                            <p>- Bogotá, D.C. - Colombia<br><a href="tel:+573504591097" class="white-text">- Ventas: (+57) 350 4591097<br></a>- Carrera 7 No. 156 - 10 Torre Krystal Oficina 1707<br><a href="mailto:servicios@limpro.co" class="white-text">- servicios@limpro.co</a></p>
                         </div>
                     </div>
                     <div class="row">

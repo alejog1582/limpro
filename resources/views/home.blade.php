@@ -230,49 +230,49 @@ document.getElementById('plan_canje').value = '8'};
             @if ($servicio->email == $user->email)
                 @if ($servicio->id_calificacion != null)
 
-                        <div class="col s4">
+                        <div class="col s12 m4">
                             <br>
                             <div class="card blue-color-light">
                                 <div class="card-content">
                                     <div class="row">
-                                        <div class="col s6">
-                                            <p><b>Fecha Servicio:</b> {{ $servicio->fecha_servicio }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">    Fecha Servicio:</span></b> {{ $servicio->fecha_servicio }}</p>
                                         </div>
-                                        <div class="col s6">
-                                            <p><b>Hora Inicio:</b> {{ $servicio->hora_inicio }}</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s6">
-                                            <p><b>Plan:</b> {{ $servicio->plan }} Horas</p>
-                                        </div>
-                                        <div class="col s6">
-                                            <p><b>Valor Plan:</b> {{ $servicio->valor_plan }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Hora Inicio:</span></b> {{ $servicio->hora_inicio }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col s6">
-                                            <p><b>Metodo de Pago:</b> {{ $servicio->metodo_pago }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Plan:</span></b> {{ $servicio->plan }} Horas</p>
                                         </div>
-                                        <div class="col s6">
-                                            <p><b>Estado:</b> {{ $servicio->estado }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Valor Plan:</span></b> {{ $servicio->valor_plan }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col s6">
-                                            <p><b>Direccion:</b> {{ $servicio->direccion_servicio }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
                                         </div>
-                                        <div class="col s6">
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Direccion:</span></b> {{ $servicio->direccion_servicio }}</p>
+                                        </div>
+                                        <div class="col s12 m6">
                                             @if ($servicio->id_funcionario_selec != null)
-                                                <p><b>Funcionario Seleccionado:</b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
+                                                <p><b><span class="green-texto">Funcionario Seleccionado:</span></b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>
                                             @endif
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col s6">
-                                            <p><b>Calificacion del servicio:</b> {{ $servicio->calificacion->cal_total }}</p>
+                                        <div class="col s12 m6">
+                                            <p><b><span class="green-texto">Calificacion del servicio:</span></b> {{ $servicio->calificacion->cal_total }}</p>
                                         </div>
-                                        <div class="col s6">
+                                        <div class="col s12 m6">
                                         </div>
                                     </div>
                                 </div>
@@ -623,7 +623,7 @@ document.getElementById('plan_canje').value = '8'};
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">date_range</i>
                                 <input id="fecha_servicio" name="fecha_servicio" type="text" class="white-text datepicker @if ($errors->has('fecha_servicio')) is-invalid    @endif">
-                                <label class="white-text" for="fecha_servicio"> Selecciona la fecha para tu servicio</label>
+                                <label class="white-text" for="fecha_servicio"> Fecha para tu servicio</label>
                                 @if ($errors->has('fecha_servicio'))
                                     @foreach ($errors->get('fecha_servicio') as $error)<h5 class="left-align">
                                         <blockquote>{{ $error }}</blockquote></h5>
@@ -632,7 +632,7 @@ document.getElementById('plan_canje').value = '8'};
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input name="nombre_cliente" id="nombre_cliente" type="text" class="white-text @if ($errors->has('nombre_cliente')) is-invalid    @endif">
                                 @if ($errors->has('nombre_cliente'))
                                     @foreach ($errors->get('nombre_cliente') as $error)
@@ -643,9 +643,9 @@ document.getElementById('plan_canje').value = '8'};
                                 @endif
                                 <label class="white-text" for="nombre_cliente">Nombre Cliente</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <select name="hora_inicio" class="@if ($errors->has('hora_inicio')) is-invalid    @endif">
-                                    <option disabled selected>Seleccione la hora de inicio del servicio</option>
+                                    <option disabled selected>Hora inicio del servicio</option>
                                     <option value="8 a.m">8 a.m</option>
                                     <option value="9 a.m">9 a.m</option>
                                     <option value="1 p.m">1 p.m</option>
@@ -661,7 +661,7 @@ document.getElementById('plan_canje').value = '8'};
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="direccion" type="text" name="direccion" class="white-text @if ($errors->has('direccion')) is-invalid    @endif">
                                 @if ($errors->has('direccion'))
                                     @foreach ($errors->get('direccion') as $error)
@@ -670,15 +670,15 @@ document.getElementById('plan_canje').value = '8'};
                                         </h5>
                                     @endforeach
                                 @endif
-                                <label class="white-text" for="direccion">Direccion donde se realizara el servicio</label>
+                                <label class="white-text" for="direccion">Direccion del servicio</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="detalle_dir" type="text" name="detalle_dir" class="white-text">
                                 <label class="white-text" for="detalle_dir">Detalle de Direccion (ej: In 7 Ap 501)</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="celular" type="text" name="celular" class="white-text @if ($errors->has('celular')) is-invalid    @endif">
                                 @if ($errors->has('celular'))
                                     @foreach ($errors->get('celular') as $error)
@@ -689,13 +689,13 @@ document.getElementById('plan_canje').value = '8'};
                                 @endif
                                 <label class="white-text" for="celular">Celular de Contacto</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="fijo" type="text" name="fijo" class="white-text">
                                 <label class="white-text" for="fijo">Fijo de Contacto</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6 offset-s3">
+                            <div class="input-field col s12 m6 offset-m3">
                                 <select name="metodo_pago" class="@if ($errors->has('metodo_pago')) is-invalid    @endif">
                                     <option disabled selected>Seleccione el metodo de pago</option>
                                     <option value="consignacion">Consignacion</option>
@@ -745,7 +745,7 @@ document.getElementById('plan_canje').value = '8'};
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">date_range</i>
                                 <input id="fecha_servicio_canje" name="fecha_servicio" type="text" class="white-text datepicker @if ($errors->has('fecha_servicio')) is-invalid    @endif">
-                                <label class="white-text" for="fecha_servicio_canje"> Selecciona la fecha para tu servicio</label>
+                                <label class="white-text" for="fecha_servicio_canje"> Fecha para tu servicio</label>
                                 @if ($errors->has('fecha_servicio'))
                                     @foreach ($errors->get('fecha_servicio') as $error)<h5 class="left-align">
                                         <blockquote>{{ $error }}</blockquote></h5>
@@ -754,7 +754,7 @@ document.getElementById('plan_canje').value = '8'};
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input name="nombre_cliente" id="nombre_cliente" type="text" class="white-text @if ($errors->has('nombre_cliente')) is-invalid    @endif">
                                 @if ($errors->has('nombre_cliente'))
                                     @foreach ($errors->get('nombre_cliente') as $error)
@@ -765,9 +765,9 @@ document.getElementById('plan_canje').value = '8'};
                                 @endif
                                 <label class="white-text" for="nombre_cliente">Nombre Cliente</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <select name="hora_inicio" class="white-text @if ($errors->has('hora_inicio')) is-invalid    @endif">
-                                    <option disabled selected>Seleccione la hora de inicio del servicio</option>
+                                    <option disabled selected>Hora inicio del servicio</option>
                                     <option value="8 a.m">8 a.m</option>
                                     <option value="9 a.m">9 a.m</option>
                                     <option value="1 p.m">1 p.m</option>
@@ -783,7 +783,7 @@ document.getElementById('plan_canje').value = '8'};
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="direccion" type="text" name="direccion" class="white-text @if ($errors->has('direccion')) is-invalid    @endif">
                                 @if ($errors->has('direccion'))
                                     @foreach ($errors->get('direccion') as $error)
@@ -792,15 +792,15 @@ document.getElementById('plan_canje').value = '8'};
                                         </h5>
                                     @endforeach
                                 @endif
-                                <label class="white-text" for="direccion">Direccion donde se realizara el servicio</label>
+                                <label class="white-text" for="direccion">Direccion del servicio</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="detalle_dir" type="text" name="detalle_dir" class="white-text">
                                 <label class="white-text" for="detalle_dir">Detalle de Direccion (ej: In 7 Ap 501)</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="celular" type="text" name="celular" class="white-text @if ($errors->has('celular')) is-invalid    @endif">
                                 @if ($errors->has('celular'))
                                     @foreach ($errors->get('celular') as $error)
@@ -811,7 +811,7 @@ document.getElementById('plan_canje').value = '8'};
                                 @endif
                                 <label class="white-text" for="celular">Celular de Contacto</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6">
                                 <input id="fijo" type="text" name="fijo" class="white-text">
                                 <label class="white-text" for="fijo">Fijo de Contacto</label>
                             </div>

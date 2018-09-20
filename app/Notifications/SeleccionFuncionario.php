@@ -41,7 +41,7 @@ class SeleccionFuncionario extends Notification {
 			->subject('Seleccion Funcioanario Servicio Id ' . $this->servicio->id)
 			->greeting('Hola ' . $notifiable->name)
 			->line('En Limpro queremos agradecerle por elegirnos como una alternativa para la prestación de servicios de limpieza. Desde ya puedes acceder al siguiente link donde encontraras nuestros funcionarios disponibles para el día ' . $this->servicio->fecha_servicio . ', con el fin de seleccionar el de tu preferencia. De igual forma  podrás elegir la opción de Selección Aleatoria en caso que lo desees.')
-			->action('Ingrese a su cuenta', url('/seleccion/servicio/' . $this->servicio->id))
+			->action('Seleccion de Funcionario', url('/seleccion/servicio/' . $this->servicio->id))
 			->salutation('Gracias por preferirnos, somos tu aliado en servicios de limpieza.');
 	}
 

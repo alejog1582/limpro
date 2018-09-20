@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="row center blue-color sin-espacio">
-   	<div class="col s4 offset-s4">
+   	<div class="col s12 m4 offset-m4">
         <br>
      	<div class="card-panel blue-color-black">
-        	<span class="white-text">La calificacion al funcionario <b>{{ $calificacion->cal_funcionario->nombre_funcionario }}</b> se ha registrado satisfactoriamiente.
+        	<span class="white-text">La calificacion al funcionario <b><span class="green-texto">{{ $calificacion->cal_funcionario->nombre_funcionario }}</span></b> se ha registrado satisfactoriamiente.
         		<br><br>
         		@if ($cal_total >= 3)
         			Agradecemos tu calificacion y es un placer para nosotros cumplir con las expectativas de nuestros clientes y seguiremos trabajando para ser mejores cada dia.

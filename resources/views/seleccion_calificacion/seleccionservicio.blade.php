@@ -415,7 +415,7 @@ document.getElementById('amabilidad').value = '5'};
                 <input type="hidden" name="id_funcionario" value="{{ $servicio->id_funcionario_selec }}">
                 <input type="hidden" name="id_servicio" value="{{ $servicio->id }}">
                 <div class="row center">
-                    <div class="col s6">
+                    <div class="col s12">
                         <p>Selecciona la calificacion de tu servicio:</p>
                     <div class="row">
                         <div class="col s6">
@@ -514,9 +514,8 @@ document.getElementById('amabilidad').value = '5'};
                         </div>
                         </div>
                     </div>
-                    <div class="col s6">
-			            <br><br><br><br><br>
-           	            <div class="input-field col s12">
+                    <div class="col s12">
+			            <div class="input-field col s12">
                             <textarea id="comentario" name="comentario" class="materialize-textarea white-text"></textarea>
                             <label for="comentario" class="white-text">Escribe tus comentaios del servicio (opcional)</label>
                         </div>
