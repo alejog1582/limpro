@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="col s12">
 			<h1 class="titulo">Aspirantes</h1>
-			<p>Si quieres hacer parte de esta familia diligencia el formulario que se encuentra a continuacion y nos estaremos poniendo en contacto para agendar una cita y conocernos mejor.</p>
+			<p>Es un gusto para nosotros recibir tu solicitud de empleo. Procede a diligenciar el siguiente formulario para iniciar el proceso requerido y así ser parte de esta familia.</p>
 		</div>
 		<br>
 		<div class="col s12">

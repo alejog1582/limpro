@@ -6,7 +6,7 @@
 	<br>
    	<div class="col s4 offset-s4">
      	<div class="card-panel blue-color-light">
-        	<span class="white-text">El Mensaje se a enviado correctamente. En menos de 24 horas responderemos tu solicitud.
+        	<span class="white-text">Gracias por contactarnos. Procederemos a canalizar tu información y prontamente nos contactaremos contigo.
         	</span>
         	<br><br>
         	<a href="/" class="btn green-color">Aceptar</a>

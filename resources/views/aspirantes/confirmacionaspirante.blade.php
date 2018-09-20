@@ -5,7 +5,7 @@
 	<br>
    	<div class="col m4 offset-m4 s12">
      	<div class="card-panel blue-color-light">
-        	<span class="white-text">Hemos recibido tu solicitud. Nos estaremos contactando para agendar una cita y conocernos mejor.
+        	<span class="white-text">Gracias por la información suministrada, nuestra área encargada procederá a validarla y se estará contactando contigo.
         	</span>
         	<br><br>
         	<a href="/" class="btn green-color">Aceptar</a>
