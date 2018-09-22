@@ -14,13 +14,13 @@
 @if ( $servicio->metodo_pago == 'consignacion')
 	<div class="col s12 m4 offset-m4">
      	<div class="card-panel blue-color-light">
-        	<span>Gracias por elegirnos. Recibimos tu solicitud donde la forma de pago seleccionada a sido consignacion bancaria. A continuacion encontraras los numeros de cuenta a los cuales podras consignar:
+        	<span>Gracias por elegirnos. Recibimos tu solicitud donde la forma de pago seleccionada a sido consignacion bancaria. A continuación encontraras los numeros de cuenta a los cuales podras consignar:
         	<br><br>Davivienda: 004470467319 ahorros
         	<br>Bancolombia: 004470467319 ahorros
         	<br>	<br>
           Recuerda que el valor a pagar es: $ {{ $servicio->valor_plan }}
           <br><br>
-        	Una vez realizado el pago debes enviar el soporte al email servicios@solsercol.co o via whatsapp al numero  350 4591097 para proceder con la asignacion del personal disponible para atender tu solicitud.
+        	Una vez realizado el pago debes enviar el soporte al email servicios@solsercol.co o via whatsapp al numero  350 4591097 para proceder con la asignación del personal disponible para atender tu solicitud.
         	</span>
         	<br><br>
         	<a href="/" class="btn green-color">Aceptar</a>

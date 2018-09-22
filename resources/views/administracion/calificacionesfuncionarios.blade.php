@@ -4,7 +4,7 @@
 
 <div class="row center blue-color white-text sin-espacio">
 	<div class="col s12">
-		<h2 class="titulo">Detalle de calificacion: {{ $calificacion->cal_funcionario->nombre_funcionario }}</h2>
+		<h2 class="titulo">Detalle de calificación: {{ $calificacion->cal_funcionario->nombre_funcionario }}</h2>
 	</div>
 </div>
 
@@ -25,7 +25,7 @@
 		            </div>
 		            <div class="row">
 		                <div class="col s12">
-		                    <p><b><span class="green-texto">Presentacion Personal:</span></b> 	{{ $calificacion->cal_presentacion_personal }}<span class="green-texto">	&#9733;</span></p>
+		                    <p><b><span class="green-texto">Presentación Personal:</span></b> 	{{ $calificacion->cal_presentacion_personal }}<span class="green-texto">	&#9733;</span></p>
 		                </div>
 		            </div>
 		            <div class="row">
@@ -35,7 +35,7 @@
 		            </div>
 		            <div class="row">
 		                <div class="col s12">
-		                    <p><b><span class="green-texto">Calificacion Total:</span></b> 	{{ $calificacion->cal_total }} <span class="green-texto">	&#9733;</span></p>
+		                    <p><b><span class="green-texto">Calificación Total:</span></b> 	{{ $calificacion->cal_total }} <span class="green-texto">	&#9733;</span></p>
 		                </div>
 		            </div>
 	            </div>

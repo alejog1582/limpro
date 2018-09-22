@@ -14,11 +14,11 @@
 @if ( $servicio->metodo_pago == 'consignacion')
 	<div class="col s4 offset-s4">
      	<div class="card-panel">
-        	<span class="blck-text">La forma de pago seleccionada a sido consignacion bancaria. A continuacion encontraras los numeros de cuenta:
+        	<span class="blck-text">La forma de pago seleccionada a sido consignacion bancaria. A continuación encontraras los numeros de cuenta:
         	<br><br>Davivienda: 004470467319 ahorros
         	<br>Bancolombia: 004470467319 ahorros
         	<br>	<br>
-        	Una vez realizado el pago enviar copia de pago al email pagos@solsercol.com. Recibido el pago podras ingresar a tu cuenta para seleccionar el colaborados que te prestara el servicio.
+        	Una vez realizado el pago enviar copia de pago al email pagos@solsercol.com. Recibido el pago podrás ingresar a tu cuenta para seleccionar el colaborador que te prestara el servicio.
         	</span>
         	<br><br>
         	<a href="/" class="btn waves-effect waves-light">Aceptar</a>

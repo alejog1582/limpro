@@ -34,7 +34,7 @@
       					 | Ver Detalle
       				</div>
       				<div class="collapsible-body">
-      					<span class="white-text">En este plan se excluye el servicio de planchado. La hora de inicio del servicio puede ser a las 8 am, 9 am, 1 pm o 2 pm. <br><br><a  class="green-texto" href="/politica/servicio">Politica de Servicio</a></span>
+      					<span class="white-text">En este plan se excluye el servicio de planchado. La hora de inicio del servicio puede ser a las 8 am, 9 am, 1 pm o 2 pm. <br><br><a  class="green-texto" href="/politica/servicio">Política de Servicio</a></span>
       				</div>
     			</li>
     		</ul>
@@ -57,7 +57,7 @@
       					 Ver Detalle
       				</div>
       				<div class="collapsible-body">
-      					<span class="white-text">En este plan se incluye el servicio de planchado unicamente en horas de la mañana. La hora de inicio del servicio puede ser a las 8 am o 9 am. <br><br><a  class="green-texto" href="/politica/servicio">Politica de Servicio</a></span>
+      					<span class="white-text">En este plan se incluye el servicio de planchado únicamente en horas de la mañana. La hora de inicio del servicio puede ser a las 8 am o 9 am. <br><br><a  class="green-texto" href="/politica/servicio">Politica de Servicio</a></span>
       				</div>
     			</li>
     		</ul>

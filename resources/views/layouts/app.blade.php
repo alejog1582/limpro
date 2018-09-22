@@ -240,7 +240,7 @@
                     </ul>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="/"><b>Inicio</b></a></li>
-                        <li><a href="#planes"><b>Nuestros Planes</b></a></li>
+                        <li><a href="/nuestrosplanes"><b>Nuestros Planes</b></a></li>
                         <li><a href="/sobrenosotros"><b>Sobre Nosotros</b></a></li>
                         <li><a href="#contacto"><b>Contacto</b></a></li>
                         @guest
@@ -291,7 +291,7 @@
                 <a href="/">Inicio</a>
             </li>
             <li>
-                <a href="#planes">Nuestros Planes</a>
+                <a href="/nuestrosplanes">Nuestros Planes</a>
             </li>
             <li>
                 <a href="/sobrenosotros">Sobre Nosotros</a>

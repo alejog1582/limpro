@@ -37,7 +37,7 @@
 		          		<p><b><span class="green-texto">Cliente:</span></b> {{ $servicio->nombre_cliente }}</p>
 		          	</div>
 		          	<div class="col s3">
-	          		<p><b><span class="green-texto">Direccion:</span></b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
+	          		<p><b><span class="green-texto">Dirección:</span></b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
 	          		</div>
 		          	<div class="col s3">
 		          		<p><b><span class="green-texto">Email:</span></b> {{ $servicio->email }}</p>
@@ -55,7 +55,7 @@
 	          			<p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
 	          		</div>
 			      	<div class="col s3">
-	          			<p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
+	          			<p><b><span class="green-texto">Método de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
 	          		</div>
 	          		<div class="col s3">
 	          			<p><b><span class="green-texto">Funcionario Seleccionado:</span></b> {{ $servicio->funcionario_selec->nombre_funcionario }}</p>

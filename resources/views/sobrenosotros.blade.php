@@ -20,7 +20,7 @@
             <div class="col s12">
                 <div class="card-panel blue-color-black">
                     <span class="white-text">
-                    <h3 class="titulo">Mision</h3>
+                    <h3 class="titulo">Misión</h3>
                     Generar satisfacción en nuestros clientes, brindando soluciones oportunas y eficientes
                     mediante la prestación del servicio de limpieza, acompañándolos cada día para facilitar su vida.
                     <br><br>
@@ -30,7 +30,7 @@
             <div class="col s12">
                 <div class="card-panel blue-color-light">
                     <span class="white-text">
-                    <h3 class="titulo">Vision</h3>
+                    <h3 class="titulo">Visión</h3>
                     Consolidarnos como una empresa líder en la prestación de servicio de limpieza, diferenciandonos en el mercado por nuestra novedosa oferta de servicio, con clientes satisfechos, garantizando la responsabilidad social con personal idóneo, capacitado y calificado en el desempeño de todas las actividades propias de nuestros servicios.
                     <br><br>
                     <br>    <br>

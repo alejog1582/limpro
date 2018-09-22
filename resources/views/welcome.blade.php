@@ -83,7 +83,7 @@
     <div class="row green-color center white-text sin-espacio">
         <div class="container">
             <div class="col s12">
-                <h3>Contamos con los siguientes medios para que solicites tus servicio: nuestra pagina web, por whatsapp al numero 350 4591097 o a nuestro correo electronico: servicios@limpro.co</h3>
+                <h3>Contamos con los siguientes medios para que solicites tus servicio: nuestra pagina web, por whatsapp al numero 350 4591097 o a nuestro correo electrónico: servicios@limpro.co</h3>
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@
     <div class="row white-text center sin-espacio blue-color-oscuro">
         <div class="row">
             <br>
-            <h2 class="sin-espacio-top titulo">Por Que Con Nosotros</h2>
+            <h2 class="sin-espacio-top titulo">Por Qué Con Nosotros</h2>
             <div class="col s12 m6">
                     <h3 class="titulo">Disponibilidad 7/24</h3>
                     <br>
@@ -115,7 +115,7 @@
         <div class="row">
             <hr>
             <div class="col s12 m6">
-                    <h3 class="titulo">Seleccion de Personal</h3>
+                    <h3 class="titulo">Selección de Personal</h3>
                     <p>Una vez el servicio sea solicitado y pagado, podrás conocer información de nuestros colaboradores disponibles para tu servicio y así escoger el colaborador de tu preferencia.</p>
             </div>
             <div class="col s12 m6">
@@ -136,9 +136,9 @@
         <div class="row">
             <hr>
             <div class="col s12 m6">
-                    <h3 class="titulo">Poliza de Seguro</h3>
+                    <h3 class="titulo">Póliza de Seguro</h3>
                     <br>
-                    <p>Contamos con una póliza de aseguramiento de nuestros servicios. El cual cubre cualquier daño y/o perdida que se halla evidenciado que fue causado por nuestra funcionaria en el desarrollo de su labor.</p>
+                    <p>Contamos con una póliza de aseguramiento de nuestros servicios. El cual cubre cualquier daño y/o pérdida que se haya evidenciado que fue causado por nuestra funcionaria en el desarrollo de su labor.</p>
             </div>
             <div class="col s12 m6">
                 <img width="60%" src="{{ asset('images/seguro.jpg') }}">
@@ -147,7 +147,7 @@
         <div class="row">
             <hr>
             <div class="col s12 m6">
-                    <h3 class="titulo">Sistema de Calificacion</h3>
+                    <h3 class="titulo">Sistema de Calificación</h3>
                     <br>
                     <p>Tu opinión y comentarios son vitales para nosotros, por eso con el ánimo de brindar una experiencia inolvidable a nuestros clientes, podrás calificar el servicio prestado y visualizar las calificaciones de otros usuarios.</p>
             </div>
@@ -161,8 +161,8 @@
         <br>
         <div class="container">
             <div class="col s12">
-                <h2 class="sin-espacio-top titulo" >Nuestos Planes</h2>
-                <a class="green-texto" href="/politica/servicio">Politica de Servicio</a>
+                <h2 class="sin-espacio-top titulo" >Nuestros Planes</h2>
+                <a class="green-texto" href="/politica/servicio">Política de Servicio</a>
             </div>
             <div class="col s12 m6">
                 <br>
@@ -287,7 +287,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="collapsible-header blue-color-oscuro"><i class="fas fa-couch"></i>Areas Comunes</div>
+                        <div class="collapsible-header blue-color-oscuro"><i class="fas fa-couch"></i>Áreas Comunes</div>
                         <div class="collapsible-body blue-color-light">
                             <span>
                                 Limpieza de pisos. (Barrer, trapear y encerar).
@@ -308,19 +308,19 @@
                         <div class="collapsible-header blue-color-oscuro"><i class="fas fa-building"></i>Oficinas</div>
                         <div class="collapsible-body blue-color-light">
                             <span>
-                                Zonas comunes (Barrer, trapear y encerar).
-                                <hr>
-                                Limpieza de Escaleras y muebles en general.
-                                <hr>
-                                Limpieza de sillas, muebles y mesas.
-                                <hr>
-                                Limpieza de ventanas y vidrios de interiores de oficinas.
-                                <hr>
-                                Limpieza de módulos y puertas.
-                                <hr>
-                                Limpieza exterior de computadores, teléfonos, impresoras y fotocopiadoras.
-                                <hr>
-                                Recolección de basuras internas
+                                    Zonas comunes (Barrer, trapear y encerar).
+                                    <hr>
+                                    Limpieza de Escaleras y muebles en general.
+                                    <hr>
+                                    Limpieza de sillas, muebles y mesas.
+                                    <hr>
+                                    Limpieza de ventanas y vidrios de interiores de oficinas.
+                                    <hr>
+                                    Limpieza de módulos y puertas.
+                                    <hr>
+                                    Limpieza exterior de computadoras, teléfonos, impresoras y fotocopiadoras.
+                                    <hr>
+                                    Recolección de basuras internas
                             </span>
                         </div>
                     </li>
@@ -342,7 +342,7 @@
     <div class="row center blue-color white-text sin-espacio">
         <div class="container">
             <div class="col s12">
-                <h3 class="titulo">Calificacion de Servicios</h3>
+                <h3 class="titulo">Calificación de Servicios</h3>
             </div>
             <div class="col s12">
                 <p> La experiencia de nuestros clientes se convierte en una prioridad para nosotros. Por eso con el fin de evaluar una experiencia más integral del uso de nuestros servicios, te invitamos a evaluar el servicio de nuestros colaboradores y dejar las observaciones que desees al respecto.</p>
@@ -354,7 +354,7 @@
         <div class="container">
             <div class="col s12">
                 <h2 class="titulo">Canje de servicios</h2>
-                <p>Beneficio exclusivo para clientes de Limpro. Por cada 10 servicios acumulados, puedes canjearlos por un servicio totalmente gratis de las mismas caracteristicas (Plan 4 o 8 horas). Para poder realizar el canje debe estar <a href="/register" class="blue-texto-oscuro">registrado</a> como usuario  y recuerda que los 10 servicios acumulados deben ser calificados.</p>
+                <p>Beneficio exclusivo para clientes de Limpro. Por cada 10 servicios acumulados, puedes canjearlos por un servicio totalmente gratis de las mismas características (Plan 4 o 8 horas). Para poder realizar el canje debe estar <a href="/register" class="blue-texto-oscuro">registrado</a> como usuario  y recuerda que los 10 servicios acumulados deben ser calificados.</p>
             </div>
         </div>
     </div>
@@ -365,7 +365,7 @@
                 <h3 class="titulo">Que puedo hacer al crear mi cuenta</h3>
             </div>
             <div class="col s12">
-                <p>Contaras con varios beneficios al crear tu cuenta, como conocer el Equipo Humano disponible para el servicio de acuerdo con tus necesidades, visualizar las calificaciones de otros usuarios y proceder a calificar el tuyo. Igualmente, con esta cuenta, te permitirá llevar el control de tus servicios y realizar el canje una vez se cumpla la política establecida.</p>
+                <p>Contarás con varios beneficios al crear tu cuenta, como conocer el Equipo Humano disponible para el servicio de acuerdo con tus necesidades, visualizar las calificaciones de otros usuarios y proceder a calificar el tuyo. Igualmente, con esta cuenta, te permitirá llevar el control de tus servicios y realizar el canje una vez se cumpla la política establecida.</p>
                 <a class="btn green-color" type="submit" name="action">Crear Cuenta<i class="material-icons right">send</i></a>
                 <br><br>
             </div>

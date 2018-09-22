@@ -58,6 +58,10 @@ Route::post('/aspirante/save', 'PagesController@SaveAspirante');
 Route::get('/sobrenosotros', 'PagesController@SobreNosotros');
 //FIn SObre Nosotros
 
+//Nuestros Planes
+Route::get('/nuestrosplanes', 'PagesController@NuestrosPlanes');
+//
+
 Route::group(['middleware' => 'admin'], function () {
 //Administracion
 

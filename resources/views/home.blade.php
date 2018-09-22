@@ -33,63 +33,63 @@ document.getElementById('plan_canje').value = '8'};
         @if ($errors->has('fecha_servicio'))
             @foreach ($errors->get('fecha_servicio') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo fecha de servicio no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo fecha de servicio no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('hora_inicio'))
             @foreach ($errors->get('hora_inicio') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo hora de inicio no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo hora de inicio no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('plan'))
             @foreach ($errors->get('plan') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo plan no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo plan no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('nombre_cliente'))
             @foreach ($errors->get('nombre_cliente') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo nombre de cliente no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo nombre de cliente no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('email'))
             @foreach ($errors->get('email') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo email no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo email no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('celular'))
             @foreach ($errors->get('celular') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo celular no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo celular no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('direccion'))
             @foreach ($errors->get('direccion') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo direccion no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo dirección no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('metodo_pago'))
             @foreach ($errors->get('metodo_pago') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo metodo de pago no se diligencio. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. El campo método de pago no se diligencio. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
         @if ($errors->has('privacidad'))
             @foreach ($errors->get('privacidad') as $error)
                 <h5 class="left-align">
-                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. Debe leer y aceptar la politica de privacidad. Intentalo de Nuevo</blockquote>
+                    <blockquote style="text-transform: uppercase;">No se pudo generar el servicio. Debe leer y aceptar la política de privacidad. Inténtalo de Nuevo</blockquote>
                 </h5>
             @endforeach
         @endif
@@ -99,7 +99,7 @@ document.getElementById('plan_canje').value = '8'};
                     <div class="col">
                         <br>
                         <div class="card-panel blue-color-black">
-                            <span class="white-text"> LIMPRO te da la bienvenida a tu cuenta.  Te invitamos a acceder a tu primer servicio, para que puedas conocer  nuestra novedosa propuesta de servicio. Para mayor informacion revisa la pagina principal.
+                            <span class="white-text"> LIMPRO te da la bienvenida a tu cuenta.  Te invitamos a acceder a tu primer servicio, para que puedas conocer  nuestra novedosa propuesta de servicio. Para mayor información revisa la página principal.
                             </span>
                         </div>
                     </div>
@@ -118,14 +118,14 @@ document.getElementById('plan_canje').value = '8'};
                                     @if ($servicio->id_funcionario_selec == null)
                                         <h5 class="left-align">
                                             <blockquote style="border-left: 5px solid #7AB518 !important; text-transform: uppercase;">
-                                                Agradecemos tu pago. A continuacion encontraras informacion basica de nuestras funcionarias disponibles, con el fin que puedas seleccionar la de tu preferencia.
+                                                Agradecemos tu pago. A continuación encontrarás información básica de nuestras funcionarias disponibles, con el fin que puedas seleccionar la de tu preferencia.
                                             </blockquote>
                                         </h5>
                                     @endif
                                     @if ($servicio->id_funcionario_selec != null)
                                         <h5 class="left-align">
                                             <blockquote style="border-left: 5px solid #7AB518 !important; text-transform: uppercase;">
-                                                El funcionario que prestara el servicio a sido seleccionado exitosamente y estara en la direccion indicada el dia del servicio.
+                                                El funcionario que prestara el servicio a sido seleccionado exitosamente y estara en la dirección indicada el día del servicio.
                                             </blockquote>
                                         </h5>
                                     @endif
@@ -133,7 +133,7 @@ document.getElementById('plan_canje').value = '8'};
                                 @if ($servicio->estado == 'solicitado')
                                     <h5 class="left-align">
                                         <blockquote style="border-left: 5px solid yellow !important; text-transform: uppercase;">
-                                            Tu servicio a sido solcitado exitosamente, quedamos atentos de la confirmación del pago.
+                                            Tu servicio ha sido solicitado exitosamente, quedamos atentos de la confirmación del pago.
                                         </blockquote>
                                     </h5>
                                 @endif
@@ -164,7 +164,7 @@ document.getElementById('plan_canje').value = '8'};
                                         </div>
                                         <div class="row">
                                             <div class="col s12 m6">
-                                                <p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
+                                                <p><b><span class="green-texto">Método de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
                                             </div>
                                             <div class="col s12 m6">
                                                 <p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
@@ -172,7 +172,7 @@ document.getElementById('plan_canje').value = '8'};
                                         </div>
                                         <div class="row">
                                             <div class="col s12">
-                                                <p><b><span class="green-texto">Direccion:</span></b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
+                                                <p><b><span class="green-texto">Dirección:</span></b> {{ $servicio->direccion_servicio }} {{ $servicio->detalle_direccion }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -219,7 +219,7 @@ document.getElementById('plan_canje').value = '8'};
                     <div class="col">
                         <br>
                         <div class="card-panel blue-color-black">
-                            <span class="white-text">Aqui encontraras el historial de servicios que te hemos brindado.
+                            <span class="white-text">Aquí encontraras el historial de servicios que te hemos brindado.
                             </span>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ document.getElementById('plan_canje').value = '8'};
                                     </div>
                                     <div class="row">
                                         <div class="col s12 m6">
-                                            <p><b><span class="green-texto">Metodo de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
+                                            <p><b><span class="green-texto">Método de Pago:</span></b> {{ $servicio->metodo_pago }}</p>
                                         </div>
                                         <div class="col s12 m6">
                                             <p><b><span class="green-texto">Estado:</span></b> {{ $servicio->estado }}</p>
@@ -260,7 +260,7 @@ document.getElementById('plan_canje').value = '8'};
                                     </div>
                                     <div class="row">
                                         <div class="col s12 m6">
-                                            <p><b><span class="green-texto">Direccion:</span></b> {{ $servicio->direccion_servicio }}</p>
+                                            <p><b><span class="green-texto">Dirección:</span></b> {{ $servicio->direccion_servicio }}</p>
                                         </div>
                                         <div class="col s12 m6">
                                             @if ($servicio->id_funcionario_selec != null)
@@ -270,7 +270,7 @@ document.getElementById('plan_canje').value = '8'};
                                     </div>
                                     <div class="row">
                                         <div class="col s12 m6">
-                                            <p><b><span class="green-texto">Calificacion del servicio:</span></b> {{ $servicio->calificacion->cal_total }}</p>
+                                            <p><b><span class="green-texto">Calificación del servicio:</span></b> {{ $servicio->calificacion->cal_total }}</p>
                                         </div>
                                         <div class="col s12 m6">
                                         </div>
@@ -298,7 +298,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Inicia tu plan de canje para solicitar uno totalmente gratis, con las mismas caracteristicas.</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Inicia tu plan de canje para solicitar uno totalmente gratis, con las mismas características.</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 1)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -313,7 +313,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 9 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 9 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 2)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -328,7 +328,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 8 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 8 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 3)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -343,7 +343,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 7 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 7 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 4)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -358,7 +358,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 6 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 6 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 5)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -373,7 +373,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 5 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 5 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 6)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -388,7 +388,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 4 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 4 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 7)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -403,7 +403,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 3 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 3 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 8)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -418,7 +418,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 2 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 2 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 == 9)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -433,7 +433,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 1 servicio para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 1 servicio para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_4()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_4 >= 10)
                     <h3 class="titulo">Plan de 4 Horas</h3>
@@ -448,7 +448,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a></span>
-                    <p>Has completado 10 sevicios en plan de 4 horas. Canjealos por un servicio gratis con las mismas caracteristicas:</p><p><a class="btn green-color modal-trigger" onclick="canje_servicio_4()" href="#canje_servicio" >Canjear<i class="material-icons">add</i></a></p>
+                    <p>Has completado 10 sevicios en plan de 4 horas. Canjealos por un servicio gratis con las mismas características:</p><p><a class="btn green-color modal-trigger" onclick="canje_servicio_4()" href="#canje_servicio" >Canjear<i class="material-icons">add</i></a></p>
                 @endif
             </div>
             <div class="col m4">
@@ -465,7 +465,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Inicia tu plan de canje para solicitar uno totalmente gratis, con las mismas caracteristicas. </p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Inicia tu plan de canje para solicitar uno totalmente gratis, con las mismas características. </p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 1)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -479,7 +479,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 9 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 9 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 2)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -493,7 +493,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 8 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 8 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 3)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -507,7 +507,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 7 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 7 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 4)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -521,7 +521,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 6 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 6 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 5)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -535,7 +535,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 5 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 5 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 6)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -549,7 +549,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 4 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 4 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 7)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -563,7 +563,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 3 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 3 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 8)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -577,7 +577,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 2 servicios para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 2 servicios para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 == 9)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -591,7 +591,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #888" href="#">&#10003;</a></span>
-                    <p>Te hacen falta 1 servicio para recibir uno totalmente gratis, con las mismas caracteristicas. Solicitalo aqui:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
+                    <p>Te hacen falta 1 servicio para recibir uno totalmente gratis, con las mismas características. Solicitalo aquí:</p><p><a class="btn-floating btn-large waves-effect waves-light green-color modal-trigger" onclick="new_servicio_8()" href="#new_servicio" ><i class="material-icons">add</i></a></p>
                 @endif
                 @if ($canje_8 >= 10)
                     <h3 class="titulo">Plan de 8 Horas</h3>
@@ -605,7 +605,7 @@ document.getElementById('plan_canje').value = '8'};
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a>
                     <a style="color: #7AB518" href="#">&#10003;</a></span>
-                    <p>Has completado 10 sevicios en plan de 8 horas. Canjealos por un servicio gratis con las mismas caracteristicas:</p><p><a class="btn green-color modal-trigger" onclick="canje_servicio_8()" href="#canje_servicio" >Canjear<i class="material-icons">add</i></a></p>
+                    <p>Has completado 10 sevicios en plan de 8 horas. Canjealos por un servicio gratis con las mismas características:</p><p><a class="btn green-color modal-trigger" onclick="canje_servicio_8()" href="#canje_servicio" >Canjear<i class="material-icons">add</i></a></p>
                 @endif
             </div>
         </div>
@@ -670,11 +670,11 @@ document.getElementById('plan_canje').value = '8'};
                                         </h5>
                                     @endforeach
                                 @endif
-                                <label class="white-text" for="direccion">Direccion del servicio</label>
+                                <label class="white-text" for="direccion">Dirección del servicio</label>
                             </div>
                             <div class="input-field col s12 m6">
                                 <input id="detalle_dir" type="text" name="detalle_dir" class="white-text">
-                                <label class="white-text" for="detalle_dir">Detalle de Direccion (ej: In 7 Ap 501)</label>
+                                <label class="white-text" for="detalle_dir">Detalle de Dirección (ej: In 7 Ap 501)</label>
                             </div>
                         </div>
                         <div class="row">
@@ -697,7 +697,7 @@ document.getElementById('plan_canje').value = '8'};
                         <div class="row">
                             <div class="input-field col s12 m6 offset-m3">
                                 <select name="metodo_pago" class="@if ($errors->has('metodo_pago')) is-invalid    @endif">
-                                    <option disabled selected>Seleccione el metodo de pago</option>
+                                    <option disabled selected>Seleccione el método de pago</option>
                                     <option value="consignacion">Consignacion</option>
                                     <option value="payu">PayU</option>
                                 </select>
@@ -792,7 +792,7 @@ document.getElementById('plan_canje').value = '8'};
                                         </h5>
                                     @endforeach
                                 @endif
-                                <label class="white-text" for="direccion">Direccion del servicio</label>
+                                <label class="white-text" for="direccion">Dirección del servicio</label>
                             </div>
                             <div class="input-field col s12 m6">
                                 <input id="detalle_dir" type="text" name="detalle_dir" class="white-text">

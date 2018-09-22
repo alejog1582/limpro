@@ -246,7 +246,7 @@ document.getElementById('amabilidad').value = '5'};
                                         <br>
                                         <span class="green-texto">Servicios Calificados:</span> {{ $x_1 }}
                                         <br>
-                                        <span class="green-texto">Calificacion Total:</span>  {{ round($cal_1, 2) }}
+                                        <span class="green-texto">Calificación Total:</span>  {{ round($cal_1, 2) }}
                                         <br>
                                         <br>
                                         <a href="/calificacion/funcionario/{{ $servicio->funcionario_1->id }}" class="green-texto" target="_blank">Ver calificaciones</a>

@@ -176,7 +176,7 @@
         <div class="col s3"><b>Comentario</b></div>
         </div>
     @foreach ($calificaciones as $calificacion)
-      @if ($calificacion->cal_total < 3.5)
+      @if ($calificacion->cal_total < 3)
         <div class="row center sin-espacio">
           <div class="col s3"><a class="green-texto" href="/administracion/calificaciones/servicios/{{ $calificacion->id_servicio }}">{{ $calificacion->id_servicio }}</a></div>
           <div class="col s3">{{ $calificacion->cal_funcionario->nombre_funcionario }}</div>
@@ -196,7 +196,7 @@
         <div class="col s3"><b>Comentario</b></div>
         </div>
     @foreach ($calificaciones as $calificacion)
-      @if ($calificacion->cal_total >= 3.5)
+      @if ($calificacion->cal_total >= 3)
         <div class="row center sin-espacio">
           <div class="col s3"><a class="green-texto" href="/administracion/calificaciones/servicios/{{ $calificacion->id_servicio }}">{{ $calificacion->id_servicio }}</a></div>
           <div class="col s3">{{ $calificacion->cal_funcionario->nombre_funcionario }}</div>

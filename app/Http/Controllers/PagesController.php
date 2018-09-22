@@ -276,4 +276,7 @@ class PagesController extends Controller {
 	public function SobreNosotros() {
 		return view('sobrenosotros');
 	}
+	public function NuestrosPlanes() {
+		return view('nuestrosplanes');
+	}
 }
